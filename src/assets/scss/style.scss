@@ -1503,7 +1503,7 @@ form>div {
   position: fixed;
   bottom: 0px;
   right: 30px;
-  padding: 10px 15px;
+  padding: 10px 25px;
   box-shadow: $secondary-shadow;
   border-radius: 3px;
   width: 350px;
@@ -1553,7 +1553,6 @@ form>div {
     }
   }
 
-
   &--close {
     position: absolute;
     top: 20px;
@@ -1565,6 +1564,18 @@ form>div {
     &:hover, &:focus {
       color: lighten($grey-color-dark, 30);
     }
+  }
+
+  &__opened {
+    background-color: #ffffff;
+    padding: 25px;
+    cursor: unset;
+  }
+
+  &__closed {
+    background-color: #00C479;
+    padding: 10px 25px;
+    cursor: pointer;
   }
 }
 

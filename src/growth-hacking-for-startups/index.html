@@ -314,83 +314,72 @@
       <span class="modal-close">&times;</span>
       <h3>Contact Us</h3>
       <p>Please enter your details and we&apos;ll get in touch soon.</p>
-      <form action="https://www.getdrip.com/forms/87999047/submissions" method="POST" data-drip-embedded-form="87999047">
-        <div>
-          <label for="drip-name">Name</label>
-          <input type="text" id="drip-name" name="fields[name]" value="" placeholder="Enter your name" />
-        </div>
-        <div>
-          <label for="drip-email">Email Address</label>
-          <input type="email" id="drip-email" name="fields[email]" value="" placeholder="Enter your email address" />
-        </div>
-        <div>
-          <label for="drip-message">Message (With Website URL)</label>
-          <textarea name="fields[message]" id="drip-message" placeholder="How can we help you?"></textarea>
-        </div>
-        <input type="submit" data-drip-attribute="sign-up-button" value="Submit">
-      </form>
+      <div id="mc_embed_signup">
+        <form action="https://xyz.us12.list-manage.com/subscribe/post?u=2c4041c68da79c12074045904&amp;id=fe8c495a2f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+          <div id="mc_embed_signup_scroll">
+            <div class="mc-field-group">
+              <label for="mce-FULLNAME">Name </label>
+              <input type="text" value="" name="FULLNAME" class="required" id="mce-FULLNAME" placeholder="John Doe">
+            </div>
+            <div class="mc-field-group">
+              <label for="mce-EMAIL">Email Address </label>
+              <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="john@doe.com">
+            </div>
+            <div class="mc-field-group">
+              <label for="mce-MESSAGE">Message (with website URL) </label>
+              <textarea name="MESSAGE" class="required" id="mce-MESSAGE" placeholder="Enter your message"></textarea>
+            </div>
+            <div id="mce-responses" class="clear">
+              <div class="response" id="mce-error-response" style="display:none"></div>
+              <div class="response" id="mce-success-response" style="display:none"></div>
+            </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_2c4041c68da79c12074045904_fe8c495a2f" tabindex="-1" value=""></div>
+            <div class="clear"><input type="submit" value="CONTACT ME" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="bottom-tab-contact-form">
+    <div class="bottom-tab-contact-form__hook">
+      <p>Free 30 Min Consultation</p>
+      <p>^</p>
+    </div>
+    <div class="bottom-tab-contact-form__content">
+      <div class="bottom-tab-contact-form--close">x</div>
+      <h3>Free 30 Min Consultation</h3>
+      <p>Get your website reviewed by our experts. Get actionable tactics to improve your rankings, traffic and conversion rates.</p>
+      <p><strong>No obligation!</strong></p>
+      <div id="mc_embed_signup">
+        <form action="https://xyz.us12.list-manage.com/subscribe/post?u=2c4041c68da79c12074045904&amp;id=fe8c495a2f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+          <div id="mc_embed_signup_scroll">
+            <div class="mc-field-group">
+              <label for="mce-FULLNAME">Name </label>
+              <input type="text" value="" name="FULLNAME" class="required" id="mce-FULLNAME" placeholder="John Doe">
+            </div>
+            <div class="mc-field-group">
+              <label for="mce-EMAIL">Email Address </label>
+              <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="john@doe.com">
+            </div>
+            <div class="mc-field-group">
+              <label for="mce-MESSAGE">Message (with website URL) </label>
+              <textarea name="MESSAGE" class="required" id="mce-MESSAGE" placeholder="Enter your message"></textarea>
+            </div>
+            <div id="mce-responses" class="clear">
+              <div class="response" id="mce-error-response" style="display:none"></div>
+              <div class="response" id="mce-success-response" style="display:none"></div>
+            </div>
+            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_2c4041c68da79c12074045904_fe8c495a2f" tabindex="-1" value=""></div>
+            <div class="clear"><input type="submit" value="CONTACT ME" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+          </div>
+        </form>
+      </div>
     </div>
   </div>
 
   <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@14.0/dist/smooth-scroll.polyfills.min.js"></script>
-  <script type="text/javascript">
-    /* Menu handling for smaller screens. */
-    var menu = document.getElementsByClassName('nav-right')[0];
-    var menuBg = document.getElementsByClassName('menu-trigger-bg')[0];
-    
-    /* Adding current year to the copyright section. */
-    var date = new Date();
-    document.getElementsByClassName('current-year')[0].innerHTML = date.getFullYear();
-
-    /* Smooth scroll. */
-    var scroll = new SmoothScroll('a[href*="#"]', {
-      offset: 50,
-      updateURL: true,
-    });
-
-    /* Contact Modal */
-    var modal = document.getElementById('contact-modal');
-    var visible = document.getElementsByClassName('visible')[0];
-
-    window.onclick = function(e) {
-      /* Navigation menu toggle. */
-      if(e.target.className === 'menu-trigger' && getComputedStyle(menu, null).display === 'none') {
-        menu.style.display = 'block';
-        menuBg.style.display = 'block';
-      } else if(e.target.className === 'menu-trigger' && getComputedStyle(menu, null).display === 'block' || e.target.className === 'menu-trigger-bg' && getComputedStyle(menuBg, null).display === 'block') {
-        menu.style.display = 'none';
-        menuBg.style.display = 'none';
-      }
-
-      /* Contact modal open. */
-      if(e.target.id === 'contact-modal-trigger') {
-        modal.style.display = 'block';
-        visible.classList.add('blur');
-      }
-
-      /* Contact modal close. */
-      if(e.target.className === 'modal-close' || e.target.id === 'contact-modal') {
-        modal.style.display = 'none';
-        visible.classList.remove('blur');
-      }
-    }
-  </script>
-
-  <!-- Drip -->
-  <script type="text/javascript">
-    var _dcq = _dcq || [];
-    var _dcs = _dcs || {};
-    _dcs.account = '3497806';
-
-    (function() {
-      var dc = document.createElement('script');
-      dc.type = 'text/javascript'; dc.async = true;
-      dc.src = '//tag.getdrip.com/3497806.js';
-      var s = document.getElementsByTagName('script')[0];
-      s.parentNode.insertBefore(dc, s);
-    })();
-  </script>
-  <!-- end Drip -->
+  <script src="../assets/js/app.js"></script>
 
 </body>
 </html>
