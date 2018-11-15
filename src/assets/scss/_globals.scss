@@ -1,0 +1,153 @@
+html, body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1em;
+  line-height: 1.375em;
+  font-family: 'Nunito', sans-serif;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: $grey-color-dark;
+  background-color: $grey-color-light;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.2em;
+  margin: 0;
+  margin-bottom: 20px;
+
+  @media (max-width: 767px) {
+    line-height: 1.25em;
+  }
+}
+
+h1, h2, h3, h4,
+.h1, .h2, .h3, .h3 {
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+h1, .h1 {
+  font-size: 3em;
+  line-height: 1.05em;
+  text-transform: unset;
+  margin: 0;
+  margin-bottom: 15px;
+
+  @media (max-width: 979px) {
+    font-size: 2.5em;
+    line-height: 1.125em;
+  }
+  
+  @media (max-width: 767px) {
+    font-size: 2em;
+    line-height: 1.25em;
+  }
+}
+
+h2, .h2 {
+  font-size: 2.25em;
+  line-height: 1.25em;
+
+  @media (max-width: 979px) {
+    font-size: 2em;
+    line-height: 1.25em;
+  }
+  
+  @media (max-width: 767px) {
+    font-size: 1.625em;
+    line-height: 1.153em;
+  }
+}
+
+h3, .h3 {
+  font-size: 1.75em;
+  line-height: 1.25em;
+
+  @media (max-width: 979px) {
+    font-size: 1.5em;
+    line-height: 1.25em;
+  }
+  
+  @media (max-width: 767px) {
+    font-size: 1.375em;
+    line-height: 1.136em;
+  }
+}
+
+h4, .h4 {
+  font-size: 1.125em;
+  line-height: 1.22em;
+  font-weight: 400;
+  color: $primary-color;
+
+  @media (max-width: 979px) {
+    font-size: 1.125em;
+    line-height: 1.222em;
+  }
+  
+  @media (max-width: 767px) {
+    line-height: 1.111em;
+  }
+}
+
+a, a:visited {
+  color: $primary-color;
+  cursor: pointer;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+a:hover, a:focus {
+  color: $grey-color-dark;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  padding-left: 1.2em;
+  font-size: 18px;
+  line-height: 1.375em;
+}
+
+li {
+  margin-bottom: 0.75em;
+}
+
+label {
+  font-size: 1em;
+  display: block;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+input[type="email"], input[type="text"], textarea {
+  display: block;
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border-radius: 2px;
+  padding: 10px;
+  box-shadow: none;
+  border: 1px solid $grey-color-dark;
+  font-family: 'Nunito', sans-serif;
+  font-size: 0.85em;
+  background-color: $grey-color-light;
+}
+
+input[type="email"]:focus, input[type="text"]:focus, textarea:focus {
+  outline: none;
+  box-shadow: $primary-shadow;
+}

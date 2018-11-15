@@ -1,0 +1,67 @@
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 3%;
+}
+
+.clear {
+  clear: both;
+}
+
+.button, input[type="submit"] {
+  padding: 10px 15px;
+  display: inline-block;
+  background-color: $primary-color;
+  color: $grey-color-light;
+  font-size: 1.1em;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 2px;
+  letter-spacing: 1.5px;
+  box-shadow: $primary-shadow;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.button:hover, .button:focus {
+  background-color: lighten($primary-color, 5%);
+  box-shadow: $secondary-shadow;
+  transform: translateY(-3px);
+}
+
+input[type="submit"] {
+  padding: 10px 15px;
+  box-shadow: none;
+  outline: none;
+  border: none;
+}
+
+input[type="submit"]:hover, input[type="submit"]:focus {
+  background-color: lighten($primary-color, 5%);
+}
+
+a.button {
+  text-decoration: none;
+
+  &:hover, &:focus {
+    color: $grey-color-light;
+  }
+}
+
+.line {
+  background-color: $primary-color;
+  height: 2px;
+  max-width: 50px;
+  margin: 0 auto 2.5em auto;
+}
+
+.lowercase {
+  text-transform: lowercase;
+}
+
+.blur {
+  filter: blur(3px);
+}
