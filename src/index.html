@@ -48,14 +48,14 @@
     <nav>
       <div class="container">
         <div class="nav-left">
-          <a href="index.html"><img src="assets/img/ghaas-logo.svg" alt="ghaas logo" title="Growth Hacking as a Service"></a>
+          <a href="./"><img src="assets/img/ghaas-logo.svg" alt="ghaas logo" title="Growth Hacking as a Service"></a>
         </div>
         <div class="nav-right">
           <ul>
-            <li><a href="growth-hacking-for-startups.html">FOR STARTUPS</a></li>
-            <li><a href="growth-hacking-for-sme.html">FOR SMEs</a></li>
-            <li><a href="http://ghaas.xyz/blog">BLOG</a></li>
-            <li><a href="contact.html">CONTACT</a></li>
+            <li><a href="growth-hacking-for-startups/">FOR STARTUPS</a></li>
+            <li><a href="growth-hacking-for-sme/">FOR SMEs</a></li>
+            <li><a href="https://ghaas.xyz/blog">BLOG</a></li>
+            <li><a href="contact/">CONTACT</a></li>
           </ul>
         </div>
         <img src="assets/img/menu.svg" alt="menu" class="menu-trigger">
@@ -232,7 +232,7 @@
           </a>
         </p>
         <p>
-          <a href="privacy-policy.html">Privacy Policy</a>
+          <a href="privacy-policy/">Privacy Policy</a>
         </p>
         <small>&copy; <span class="current-year"></span> Ghaas</small>
       </div>
@@ -309,79 +309,7 @@
     </div>
   </div>
 
-  <script type="text/javascript">
-    /* Menu handling for smaller screens. */
-    var menu = document.getElementsByClassName('nav-right')[0];
-    var menuBg = document.getElementsByClassName('menu-trigger-bg')[0];
-
-    /* Adding current year to the copyright section. */
-    var date = new Date();
-    document.getElementsByClassName('current-year')[0].innerHTML = date.getFullYear();
-
-    /* Contact Modal */
-    var modal = document.getElementById('contact-modal');
-    var visible = document.getElementsByClassName('visible')[0];
-
-    window.onclick = function(e) {
-      /* Navigation menu toggle. */
-      if(e.target.className === 'menu-trigger' && getComputedStyle(menu, null).display === 'none') {
-        menu.style.display = 'block';
-        menuBg.style.display = 'block';
-      } else if(e.target.className === 'menu-trigger' && getComputedStyle(menu, null).display === 'block' || e.target.className === 'menu-trigger-bg' && getComputedStyle(menuBg, null).display === 'block') {
-        menu.style.display = 'none';
-        menuBg.style.display = 'none';
-      }
-
-      /* Contact modal open. */
-      if(e.target.id === 'contact-modal-trigger') {
-        modal.style.display = 'block';
-        visible.classList.add('blur');
-      }
-
-      /* Contact modal close. */
-      if(e.target.className === 'modal-close' || e.target.id === 'contact-modal') {
-        modal.style.display = 'none';
-        visible.classList.remove('blur');
-      }
-
-      /* Bottom tab contact form */
-      var bottomTabForm = document.getElementsByClassName('bottom-tab-contact-form')[0];
-      var bottomTabFormHook = document.getElementsByClassName('bottom-tab-contact-form__hook')[0];
-      var bottomTabFormContent = document.getElementsByClassName('bottom-tab-contact-form__content')[0];
-
-      if(e.target.className === 'bottom-tab-contact-form' || e.target.className === 'bottom-tab-contact-form__hook' || e.target.parentElement.className === 'bottom-tab-contact-form__hook') {
-        bottomTabFormHook.style.display = 'none';
-        bottomTabFormContent.style.display = 'initial';
-        bottomTabForm.style.backgroundColor = '#efefef';
-        bottomTabForm.style.padding = '25px';
-        bottomTabForm.style.cursor = 'unset';
-      }
-
-      if(e.target.className === 'bottom-tab-contact-form--close') {
-        bottomTabFormHook.style.display = 'initial';
-        bottomTabFormContent.style.display = 'none';
-        bottomTabForm.style.backgroundColor = '#00C479';
-        bottomTabForm.style.padding = '10px 15px';
-        bottomTabForm.style.cursor = 'pointer';
-      }
-    }
-  </script>
-
-  <!-- Drip -->
-  <!-- <script type="text/javascript">
-    var _dcq = _dcq || [];
-    var _dcs = _dcs || {};
-    _dcs.account = '3497806';
-
-    (function() {
-      var dc = document.createElement('script');
-      dc.type = 'text/javascript'; dc.async = true;
-      dc.src = '//tag.getdrip.com/3497806.js';
-      var s = document.getElementsByTagName('script')[0];
-      s.parentNode.insertBefore(dc, s);
-    })();
-  </script> -->
-  <!-- end Drip -->
+  <script src="assets/js/app.js"></script>
 
 </body>
 </html>
