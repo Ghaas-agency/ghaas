@@ -12,6 +12,43 @@
         "destination": "/index.html"
       }
     ],
+    "redirects": [
+      {
+        "source" : "/contact.html",
+        "destination" : "/contact/",
+        "type" : 301
+      },
+      {
+        "source" : "/growth-hacking-for-sme.html",
+        "destination" : "/growth-hacking-for-sme/",
+        "type" : 301
+      },
+      {
+        "source" : "/growth-hacking-for-startups.html",
+        "destination" : "/growth-hacking-for-startups/",
+        "type" : 301
+      },
+      {
+        "source" : "/thank-you.html",
+        "destination" : "/thank-you/",
+        "type" : 301
+      },
+      {
+        "source" : "/privacy-policy.html",
+        "destination" : "/privacy-policy/",
+        "type" : 301
+      },
+      {
+        "source" : "/hiring.html",
+        "destination" : "/hiring/",
+        "type" : 301
+      },
+      {
+        "source" : "/about.html",
+        "destination" : "/about/",
+        "type" : 301
+      }
+    ],
     "headers": [
       {
         "source": "**/*.@(eot|otf|ttf|ttc|woff|font.css)",
