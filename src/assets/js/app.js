@@ -46,12 +46,42 @@ window.onclick = function(e) {
   var bottomTabFormContent = document.getElementsByClassName('bottom-tab-contact-form__content')[0];
 
   if(e.target.className === 'bottom-tab-contact-form' || e.target.className === 'bottom-tab-contact-form__hook' || e.target.parentElement.className === 'bottom-tab-contact-form__hook' || e.target.className === 'bottom-tab-contact-form bottom-tab-contact-form__closed') {
-    bottomTabFormHook.style.display = 'none';
-    bottomTabFormContent.style.display = 'initial';
-    bottomTabForm.className = 'bottom-tab-contact-form bottom-tab-contact-form__opened';
+    var intervals = setInterval(ann, 5);
+    var pos = 0;
+    function ann() {
+      if(pos > 50) {
+        clearInterval(intervals);
+        bottomTabFormHook.style.display = 'none';
+        bottomTabFormContent.style.display = 'initial';
+        bottomTabForm.className = 'bottom-tab-contact-form bottom-tab-contact-form__opened';
+        bottomTabForm.style.transform = "translateY(0px)";
+        bottomTabForm.style.msTransform = "translateY(0px)";
+        bottomTabForm.style.WebkitTransform = "translateY(0px)";
+        var intervals2 = setInterval(ann2, 5);
+        pos = 500;
+        function ann2() {
+          if(pos < 0) {
+            clearInterval(intervals2);
+            bottomTabForm.style.transform = "translateY(0px)";
+            bottomTabForm.style.msTransform = "translateY(0px)";
+            bottomTabForm.style.WebkitTransform = "translateY(0px)";
+          } else {
+            bottomTabForm.style.transform = "translateY(" + pos + "px)";
+            bottomTabForm.style.msTransform = "translateY(" + pos + "px)";
+            bottomTabForm.style.WebkitTransform = "translateY(" + pos + "px)";
+            pos -= 50;
+          }
+        }
+      } else {
+        bottomTabForm.style.transform = "translateY(" + pos + "px)";
+        bottomTabForm.style.msTransform = "translateY(" + pos + "px)";
+        bottomTabForm.style.WebkitTransform = "translateY(" + pos + "px)";
+        pos += 5;
+      }
+    }
   }
 
-  if(e.target.className === 'bottom-tab-contact-form--close') {
+  if(e.target.className === 'bottom-tab-contact-form--close' || e.target.parentElement.className === 'bottom-tab-contact-form--close') {
     bottomTabFormHook.style.display = 'initial';
     bottomTabFormContent.style.display = 'none';
     bottomTabForm.className = 'bottom-tab-contact-form bottom-tab-contact-form__closed';
