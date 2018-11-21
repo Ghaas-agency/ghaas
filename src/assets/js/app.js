@@ -54,9 +54,9 @@ window.onclick = function(e) {
         bottomTabFormHook.style.display = 'none';
         bottomTabFormContent.style.display = 'initial';
         bottomTabForm.className = 'bottom-tab-contact-form bottom-tab-contact-form__opened';
-        bottomTabForm.style.transform = "translateY(0px)";
-        bottomTabForm.style.msTransform = "translateY(0px)";
-        bottomTabForm.style.WebkitTransform = "translateY(0px)";
+        bottomTabForm.style.transform = "translateY(50px)";
+        bottomTabForm.style.msTransform = "translateY(50px)";
+        bottomTabForm.style.WebkitTransform = "translateY(50px)";
         var intervals2 = setInterval(ann2, 5);
         pos = 500;
         function ann2() {
