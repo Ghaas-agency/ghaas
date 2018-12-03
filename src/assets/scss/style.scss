@@ -377,7 +377,8 @@ footer {
   }
 
   .section-problems {
-    padding: 100px 0;
+    padding-top: 100px;
+    padding-bottom: 60px;
     text-align: center;
 
     &__intro {
@@ -425,7 +426,11 @@ footer {
       -webkit-box-align: center;
       -ms-flex-align: center;
       align-items: center;
-      padding: 50px 0;
+      padding: 20px 0;
+
+      &:last-child {
+        padding-bottom: 0
+      }
 
       &--left {
         -webkit-box-flex: 1;
@@ -518,6 +523,7 @@ footer {
   .section-clients {
     text-align: center;
     padding: 100px 5%;
+    padding-bottom: 75px;
 
     h2 {
       margin: 0;
@@ -536,8 +542,6 @@ footer {
       -webkit-box-pack: center;
       -ms-flex-pack: center;
       justify-content: center;
-
-      
     }
 
     &__item {
@@ -549,8 +553,8 @@ footer {
       -ms-flex-item-align: center;
       align-self: center;
       max-width: 150px;
-      -webkit-filter: grayscale(100%) opacity(75%);
-      filter: grayscale(100%) opacity(75%);
+      -webkit-filter: grayscale(100%) opacity(80%);
+      filter: grayscale(100%) opacity(80%);
       -webkit-transition: all 0.3s ease-in-out;
       transition: all 0.3s ease-in-out;
 
