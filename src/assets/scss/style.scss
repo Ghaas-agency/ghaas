@@ -519,6 +519,10 @@ footer {
     text-align: center;
     padding: 100px 5%;
 
+    h2 {
+      margin: 0;
+    }
+
     @media (max-width: 767px) {
       padding: 100px 0%;
     }
@@ -532,6 +536,8 @@ footer {
       -webkit-box-pack: center;
       -ms-flex-pack: center;
       justify-content: center;
+
+      
     }
 
     &__item {
@@ -566,6 +572,14 @@ footer {
       @media (max-width: 767px) {
         padding: 20px;
       }
+
+      &:last-child {
+        max-width: 200px;
+      }
+    }
+
+    img:last-child {
+      max-height: 70px;
     }
   }
 }
