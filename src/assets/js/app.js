@@ -45,7 +45,7 @@ window.onclick = function(e) {
   var bottomTabFormHook = document.getElementsByClassName('bottom-tab-contact-form__hook')[0];
   var bottomTabFormContent = document.getElementsByClassName('bottom-tab-contact-form__content')[0];
 
-  if(e.target.className === 'bottom-tab-contact-form' || e.target.className === 'bottom-tab-contact-form__hook' || e.target.parentElement.className === 'bottom-tab-contact-form__hook' || e.target.className === 'bottom-tab-contact-form bottom-tab-contact-form__closed') {
+  if(e.target.className === 'bottom-tab-contact-form' || e.target.className === 'bottom-tab-contact-form__hook' || e.target.parentElement.className === 'bottom-tab-contact-form__hook' || e.target.parentElement.parentElement.className === 'bottom-tab-contact-form__hook' || e.target.className === 'bottom-tab-contact-form bottom-tab-contact-form__closed') {
     var intervals = setInterval(ann, 5);
     var pos = 0;
     function ann() {
