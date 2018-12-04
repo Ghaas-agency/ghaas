@@ -239,7 +239,6 @@ footer {
   a {
     vertical-align: middle;
     text-decoration: none;
-    text-decoration: none;
   }
 
   a:hover {
@@ -1359,8 +1358,11 @@ footer {
     }
 
     @media (max-width: 480px) {
+      padding: 50px 0% 100px 0%;
+
       &__left {
-        width: 80%;
+        max-width: 90%;
+        width: auto;
       }
     }
   }
