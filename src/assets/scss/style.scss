@@ -247,7 +247,8 @@ footer {
   }
 
   img {
-    width: 20px;
+    width: auto;
+    height: 20px;
     margin: 5px 10px;
   }
 }
@@ -1426,6 +1427,131 @@ footer {
     padding: 100px 15%;
   }
 }
+
+/* CASE STUDIES */
+
+.case-studies {
+  &-hero {
+    margin-top: 65px;
+    padding: 100px 0;
+    text-align: center
+  }
+
+  &-clients {
+    padding-bottom: 100px;
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    &__item {
+      flex: 1;
+      max-width: 350px;
+      min-width: 300px;
+      background-color: $primary-color;
+      color: #ffffff !important;
+      text-decoration: none;
+      color: $grey-color-light;
+      -webkit-box-shadow: $primary-shadow;
+      box-shadow: $primary-shadow;
+      border-radius: 2px;
+      -webkit-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+      cursor: pointer;
+      text-align: left;
+      border-radius: 3px;
+      overflow: hidden;
+
+      h3 {
+        margin: 0;
+        margin-bottom: 15px;
+      }
+
+      p {
+        margin: 0;
+      }
+
+      &--content {
+        padding: 50px 30px;
+      }
+
+      &:hover {
+        -webkit-box-shadow: $secondary-shadow;
+        box-shadow: $secondary-shadow;
+        -webkit-transform: translateY(-3px);
+        transform: translateY(-3px);
+        background-color: lighten($primary-color, 5%);
+      }
+
+    }
+  }
+}
+
+.cs-fitato {
+  &-hero {
+    margin-top: 65px;
+    padding: 100px 0;
+    text-align: center;
+
+    p {
+      font-size: 26px;
+    }
+  }
+
+  &-intro {
+    padding: 20px 20%;
+    text-align: center;
+    background-color: #ffffff;
+    
+    &__wrapper {
+      margin-top: -70px;
+      padding-bottom: 50px;
+
+      img {
+        margin-bottom: 30px;
+        width: 100px;
+      }
+
+      p {
+        font-size: 20px;
+        line-height: 1.5
+      }
+    }
+  }
+
+  &-figures {
+    padding: 50px 0;
+    background-color: $primary-color;
+    color: #ffffff;
+
+    &__items {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__item {
+      flex: 1;
+      padding: 0 10px;
+      margin: 30px;
+      text-align: center;
+
+      p:first-child {
+        font-size: 50px;
+        margin-bottom: 10px;
+      }
+
+      p:last-child {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+/* CONTACT MODAL */
 
 #contact-modal {
   display: none;
