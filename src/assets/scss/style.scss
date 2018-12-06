@@ -1490,6 +1490,10 @@ footer {
 }
 
 .cs-fitato {
+  p {
+    line-height: 1.5em;
+  }
+
   &-hero {
     margin-top: 65px;
     padding: 100px 0;
@@ -1546,6 +1550,46 @@ footer {
 
       p:last-child {
         font-size: 20px;
+      }
+    }
+  }
+
+  &-story {
+    padding: 50px 0;
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    &__left, &__right {
+      flex: 1;
+
+    }
+  }
+
+  &-problem {
+    padding: 50px 0;
+    background-color: #ffffff;
+    text-align: center;
+
+    &__items {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    &__item {
+      flex: 1;
+      border: 1px solid $primary-color;
+      margin: 10px;
+      padding: 30px;
+      border-radius: 3px;
+
+      p {
+        margin: 0;
       }
     }
   }
