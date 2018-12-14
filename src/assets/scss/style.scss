@@ -1493,34 +1493,82 @@ footer {
   p {
     line-height: 1.5em;
   }
+  
+  p, ul, a, li, ol {
+    color: lighten($grey-color-dark, $amount: 15%);
+  }
 
   &-hero {
     margin-top: 65px;
-    padding: 100px 0;
+    padding: 100px 0 50px 0;
     text-align: center;
 
     p {
       font-size: 26px;
     }
+
+    h1 {
+      a {
+        border: none !important;
+      }
+
+      img {
+        width: 180px;
+        margin: 0;
+      }
+    }
   }
 
   &-intro {
-    padding: 20px 20%;
-    text-align: center;
+    padding: 50px 20%;
     background-color: #ffffff;
     
-    &__wrapper {
-      margin-top: -70px;
-      padding-bottom: 50px;
+    p {
+      font-size: 24px;
+      line-height: 1.5;
+      margin: 0;
+    }
+
+    &__items {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    &__item {
+      flex: 1;
+      padding: 15px;
 
       img {
-        margin-bottom: 30px;
-        width: 100px;
+        max-height: 470px;
       }
 
-      p {
-        font-size: 20px;
-        line-height: 1.5
+      &:first-child {
+        text-align: right;
+      }
+
+      h2 {
+        margin-bottom: 15px;
+      }
+    }
+
+    @media only screen and (max-width: 979px) {
+      padding: 50px 10%;
+    }
+
+    @media only screen and (max-width: 767px) {
+      padding: 50px 5%;
+
+      &__item {
+        flex: 100%;
+  
+        img {
+          max-height: 350px;
+        }
+  
+        &:first-child {
+          text-align: center;
+        }
       }
     }
   }
@@ -1528,51 +1576,70 @@ footer {
   &-figures {
     padding: 50px 0;
     background-color: $primary-color;
-    color: #ffffff;
-
+    
     &__items {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       align-items: center;
     }
-
+    
     &__item {
       flex: 1;
       padding: 0 10px;
       margin: 30px;
       text-align: center;
+      min-width: 100px;
+      
+      p {
+        color: #ffffff;
+      }
 
       p:first-child {
         font-size: 50px;
         margin-bottom: 10px;
+        line-height: 1em;
       }
-
+      
       p:last-child {
         font-size: 20px;
+        line-height: 1em;
+        margin-bottom: 0;
       }
     }
   }
 
   &-story {
-    padding: 50px 0;
+    padding: 50px 5%;
+    background-color: #ffffff;
 
     .container {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
+      align-items: center;
+      flex-direction: row-reverse;
     }
 
     &__left, &__right {
       flex: 1;
+      min-width: 350px;
+    }
 
+    img {
+      max-height: 500px;
+      vertical-align: middle;
+      margin: 0
     }
   }
 
   &-problem {
-    padding: 50px 0;
-    background-color: #ffffff;
+    padding: 50px 3%;
     text-align: center;
+
+    p {
+      margin-bottom: 10px;
+    }
 
     &__items {
       display: flex;
@@ -1590,8 +1657,55 @@ footer {
 
       p {
         margin: 0;
+        line-height: 1em;
       }
     }
+  }
+
+  &-framework {
+    padding: 50px 3%;
+    text-align: center;
+    background-color: #ffffff;
+
+    &__items {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    &__item {
+      flex: 1;
+      padding: 10px 20px;
+
+      p {
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  &-tools {
+    padding: 50px 5%;
+    background-color: $primary-color;
+    color: #ffffff;
+    
+    &__items {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    
+    &__item {
+      flex: 1;
+      
+      li, p {
+        font-size: 22px;
+        color: #ffffff;
+      }
+    }
+  }
+
+  &-download {
+    padding: 40px 0 50px 0;
+    text-align: center;
   }
 }
 
