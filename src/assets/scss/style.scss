@@ -232,7 +232,7 @@ nav {
 footer {
   background-color: $grey-color-dark;
   color: darken($grey-color-light, 25%);
-  padding: 20px 0;
+  padding: 22px 0;
   text-align: center;
   border-top: 1px solid $primary-color;
 
@@ -1650,14 +1650,27 @@ footer {
 
     &__item {
       flex: 1;
-      border: 1px solid $primary-color;
-      margin: 10px;
-      padding: 30px;
+      padding: 20px;
       border-radius: 3px;
+      text-align: left;
+      min-width: 300px;
 
       p {
         margin: 0;
-        line-height: 1em;
+        line-height: 1.2em;
+        font-size: 22px;
+      }
+
+      img {
+        float: left;
+        max-width: 80px;
+        margin-right: 25px;
+        margin-bottom: 25px;
+      }
+
+      &--emphasis {
+        font-size: 40px;
+        line-height: 1.3em;
       }
     }
   }
@@ -1679,6 +1692,10 @@ footer {
       p {
         margin-bottom: 10px;
       }
+
+      img {
+        max-height: 150px;
+      }
     }
   }
 
@@ -1695,7 +1712,13 @@ footer {
     
     &__item {
       flex: 1;
+      margin: 0 5px;
+      min-width: 200px;
       
+      img {
+        margin: 5px;
+      }
+
       li, p {
         font-size: 22px;
         color: #ffffff;
@@ -1704,7 +1727,7 @@ footer {
   }
 
   &-download {
-    padding: 40px 0 50px 0;
+    padding: 80px 0;
     text-align: center;
   }
 }
