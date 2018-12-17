@@ -1814,6 +1814,10 @@ footer {
   position: relative;
   overflow: auto;
 
+  h3 {
+    margin: 30px 0 10px 0;
+  }
+
   @media (max-width: 480px) {
     width: 80%;
   }
@@ -1930,6 +1934,7 @@ form>div {
       font-size: 140%;
       margin: 0;
       margin-bottom: 10px;
+      padding-right: 30px;
     }
   
     form {
