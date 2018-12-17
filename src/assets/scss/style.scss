@@ -1500,7 +1500,7 @@ footer {
 
   &-hero {
     margin-top: 65px;
-    padding: 100px 0 50px 0;
+    padding: 50px 0;
     text-align: center;
 
     p {
@@ -1631,14 +1631,28 @@ footer {
       vertical-align: middle;
       margin: 0
     }
+    
+    .line {
+      margin: 0;
+      margin-bottom: 2.5em;
+    }
   }
 
   &-problem {
     padding: 50px 3%;
     text-align: center;
+    background-color: #ffffff;
 
     p {
       margin-bottom: 10px;
+    }
+
+    &__text {
+      padding: 0px 20%;
+
+      p {
+        margin-bottom: 5px;
+      }
     }
 
     &__items {
@@ -1646,6 +1660,7 @@ footer {
       flex-wrap: wrap;
       justify-content: center;
       padding: 20px;
+      margin-top: 20px;
     }
 
     &__item {
@@ -1663,7 +1678,8 @@ footer {
 
       img {
         float: left;
-        max-width: 80px;
+        max-width: 100px;
+        max-height: 80px;
         margin-right: 25px;
         margin-bottom: 25px;
       }
@@ -1694,16 +1710,41 @@ footer {
       }
 
       img {
-        max-height: 150px;
+        max-height: 80px;
       }
     }
   }
 
   &-tools {
     padding: 50px 5%;
-    background-color: $primary-color;
-    color: #ffffff;
+    padding-bottom: 100px;
+    text-align: center;
+    background-color: #ffffff;
     
+    &__tools {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+    
+    &__tool {
+      flex: 1;
+      padding: 10px;
+    }
+
+    p {
+      font-size: 22px;
+    }
+
+    &--more {
+      text-align: right;
+    }
+  }
+
+  &-results {
+    padding-top: 50px;
+    padding-bottom: 100px;
+
     &__items {
       display: flex;
       flex-wrap: wrap;
@@ -1721,14 +1762,23 @@ footer {
 
       li, p {
         font-size: 22px;
-        color: #ffffff;
+        /* color: #ffffff; */
       }
     }
   }
 
   &-download {
-    padding: 80px 0;
+    padding: 50px 0;
     text-align: center;
+    /* background-color: #ffffff; */
+
+    &__wrapper {
+      margin-top: -100px;
+      background-color: $grey-color-dark;
+      padding: 50px 5%;
+      color: #ffffff;
+      box-shadow: $primary-shadow;
+    }
   }
 }
 
