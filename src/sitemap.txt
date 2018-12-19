@@ -1,5 +1,7 @@
 ﻿https://ghaas.xyz
-https://ghaas.xyz/contact
-https://ghaas.xyz/growth-hacking-for-sme
-https://ghaas.xyz/growth-hacking-for-startups
-https://ghaas.xyz/privacy-policy
+https://ghaas.xyz/contact/
+https://ghaas.xyz/growth-hacking-for-sme/
+https://ghaas.xyz/growth-hacking-for-startups/
+https://ghaas.xyz/privacy-policy/
+https://ghaas.xyz/case-studies/
+https://ghaas.xyz/case-studies/fitato/

@@ -1778,6 +1778,7 @@ footer {
     -o-background-size: cover;
     background-size: cover;
     background-position: top;
+    background-color: $grey-color-dark;
 
     @media only screen and (max-width: 767px) {
       margin-top: 63px;
@@ -2107,6 +2108,16 @@ footer {
       -ms-flex: 1;
       flex: 1;
       padding: 10px 20px;
+      min-width: 150px;
+      margin: 20px 0;
+
+      @media only screen and (max-width: 979px) {
+        min-width: 250px;
+      }
+
+      @media only screen and (max-width: 767px) {
+        width: 100%;
+      }
 
       p {
         margin-bottom: 10px;
@@ -2134,6 +2145,11 @@ footer {
       -ms-flex-wrap: wrap;
       flex-wrap: wrap;
       margin-top: 20px;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -moz-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
     }
 
     &__tool {
@@ -2143,10 +2159,31 @@ footer {
       -ms-flex: 1;
       flex: 1;
       padding: 10px;
+      min-width: 150px;
+
+      @media only screen and (max-width: 1200px) {
+        min-width: 180px;
+      }
+      
+      @media only screen and (max-width: 979px) {
+        min-width: 150px;
+      }
+      
+      @media only screen and (max-width: 767px) {
+        min-width: 130px;
+      }
+      
+      @media only screen and (max-width: 480px) {
+        min-width: 130px;
+      }
     }
 
     p {
-      font-size: 22px;
+      font-size: 20px;
+
+      @media only screen and (max-width: 767px) {
+        font-size: 18px;
+      }
     }
 
     &--more {
@@ -2371,6 +2408,7 @@ form>div {
   z-index: 999999;
   overflow: auto;
   max-height: 80vh;
+  display: none;
 
   @media (max-width: 767px) {
     right: 3.5%;
