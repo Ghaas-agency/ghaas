@@ -1673,7 +1673,7 @@ footer {
 .case-studies {
   &-hero {
     margin-top: 65px;
-    padding: 100px 0;
+    padding: 50px 0;
     text-align: center
   }
 
@@ -1702,7 +1702,7 @@ footer {
       -moz-box-flex: 1;
       -ms-flex: 1;
       flex: 1;
-      max-width: 350px;
+      max-width: 650px;
       min-width: 300px;
       background-color: $primary-color;
       color: #ffffff !important;
@@ -2020,6 +2020,7 @@ footer {
       -moz-box-flex: 1;
       -ms-flex: 1;
       flex: 1;
+      min-width: 300px;
     }
 
     &__left {
