@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Fitato Case Study | Ghaas</title>
   <meta name="description" content="The best growth and digital marketing services for small and medium enterprises. We apply startup growth principles to your business to achieve exponential growth for your business.">
-  <link href="https://fonts.googleapis.com/css?family=Nunito:300,300i,400,400i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:300,300i,400,400i,600,600i" rel="stylesheet">
   <link rel="stylesheet" href="../../assets/css/style.css">
   <link rel="icon" type="image/png" href="../../assets/img/ghaas-icon.png">
   <meta name="image" content="https://ghaas.xyz/assets/img/ghaas-meta.jpg">
@@ -36,7 +36,7 @@
     })(window,document,'script','dataLayer','GTM-W7FJFBF');</script>
   <!-- End Google Tag Manager -->
 </head>
-<body>
+<body class="cs-fitato">
 
   <!-- Google Tag Manager (noscript) -->
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W7FJFBF"
@@ -64,14 +64,14 @@
       </div>
     </nav>
 
-    <main class="cs-fitato">
+    <main>
 
       <section class="cs-fitato-hero">
         <div class="container">
           <!-- <div class="line"></div> -->
           <h1>
             <a href="https://www.fitato.fit">
-              <img src="../../assets/img/case-studies/fitato/fitato-logo.png" alt="fitato logo" title="Fitato Case Study">
+              <img src="../../assets/img/case-studies/fitato/fitato-logo-white.svg" alt="fitato logo" title="Fitato Case Study">
             </a>
           </h1>
           <p>Consulting CMO and Full Stack Growth Marketing</p>
@@ -82,9 +82,9 @@
         <div class="container">
           <div class="cs-fitato-intro__items">
             <div class="cs-fitato-intro__item">
-              <img src="../../assets/img/case-studies/fitato/fitato-app.jpg" alt="fitato app">
+              <img src="../../assets/img/case-studies/fitato/fitato-app.jpg" alt="fitato app" id="fitato-app-phone-img">
             </div>
-            <div class="cs-fitato-intro__item">
+            <div class="cs-fitato-intro__item" id="fitato-app-phone-content">
               <h2>Fitato:<br>Your Fitness Freedom</h2>
               <p>Fitato is a mobile-based fitness membership solution that gives access to multiple gyms and fitness studios to its users.</p>
             </div>
@@ -394,6 +394,43 @@
   </div>
 
   <script src="../../assets/js/app.js"></script>
+  <!-- <script>
+    ;(function() {
+      var throttle = function(type, name, obj) {
+        var obj = obj || window;
+        var running = false;
+        var func = function() {
+          if (running) { return; }
+          running = true;
+          requestAnimationFrame(function() {
+            obj.dispatchEvent(new CustomEvent(name));
+            running = false;
+          });
+        };
+        obj.addEventListener(type, func);
+      };
+      throttle ("scroll", "optimizedScroll");
+    })();
+
+    var phoneImg = document.getElementById('fitato-app-phone-img');
+    var phoneContent = document.getElementById('fitato-app-phone-content');
+    phoneContent.style.opacity = '0';
+    phoneImg.style.transform = "translateX(102px)";
+    var imgOffset = 0;
+    var contentOffset = 0;
+    window.addEventListener("optimizedScroll", function() {
+      imgOffset = window.pageYOffset * 0.015;
+      contentOffset = 102 - (imgOffset*15);
+      if(imgOffset < 7) {
+        /* phoneImg.style.transform = "rotate(-"+imgOffset+"deg)"; */
+        phoneImg.style.transform = "translateX("+contentOffset+"px)";
+        phoneContent.style.opacity = '0';
+      } else {
+        phoneContent.style.opacity = '1';
+
+      };
+    });00
+  </script> -->
 
 </body>
 </html>

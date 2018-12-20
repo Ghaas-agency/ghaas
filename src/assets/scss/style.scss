@@ -1767,9 +1767,76 @@ footer {
     color: lighten($grey-color-dark, $amount: 15%);
   }
 
+  h1, h2, h3 {
+    text-transform: none;
+    font-weight: 600;
+    letter-spacing: 0;
+    margin-bottom: 20px;
+  }
+
+  .line {
+    background-color: $fitato-red;
+  }
+
+  .button {
+    background-color: $fitato-red;
+    font-weight: 700;
+  }
+
+  nav {
+    position: relative;
+    background: none;
+    box-shadow: none;
+
+    .nav-left img {
+      filter: grayscale(100%) brightness(2);
+    }
+
+    .nav-right ul li a:hover,
+    .nav-right ul li a:focus {
+      color: $fitato-red;
+    }
+
+    .nav-right ul li a.active {
+      color: $fitato-red;
+
+      &::after {
+        background: none;
+      }
+
+      @media only screen and (max-width: 767px) {
+        color: darken($grey-color-light, 20%);
+        border-color: darken($grey-color-light, 20%);
+      }
+    }
+  }
+
+  .section-talk {
+    padding: 50px 0;
+  }
+
+  footer {
+    background-color: darken($grey-color-dark, 10%);
+    border: 0
+  }
+
+  .contact-modal-content {
+    border-top-color: $fitato-red;
+  }
+  
+  nav .menu-trigger {
+    filter: saturate(100%);
+  }
+
+  @media only screen and (max-width: 767px) {
+    nav .nav-right {
+      background-color: $fitato-red;
+    }
+  }
+
   &-hero {
-    margin-top: 65px;
-    padding: 75px 0;
+    margin-top: -67px;
+    /* padding: 10px 0; */
     text-align: center;
     background-image: url('../img/case-studies/fitato/fitato-design-bg.jpg');
     background-repeat: no-repeat;
@@ -1779,9 +1846,16 @@ footer {
     background-size: cover;
     background-position: top;
     background-color: $grey-color-dark;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.2);
+    background-blend-mode: overlay;
 
     @media only screen and (max-width: 767px) {
-      margin-top: 63px;
+      margin-top: -64px;
       background-position: 80% top;
       background-color: rgba(0, 0, 0, 0.2);
       background-blend-mode: overlay;
@@ -1807,6 +1881,12 @@ footer {
   &-intro {
     padding: 50px 20%;
     background-color: #ffffff;
+    /* background-image: url('../img/case-studies/fitato/fitato-home.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: overlay; */
 
     p {
       font-size: 24px;
@@ -1878,7 +1958,7 @@ footer {
 
   &-figures {
     padding: 50px 0;
-    background-color: $primary-color;
+    background-color: $fitato-red;
 
     &__items {
       display: -webkit-box;
@@ -2144,38 +2224,52 @@ footer {
       -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-      margin-top: 20px;
+      padding-top: 30px;
       -webkit-box-align: center;
       -webkit-align-items: center;
       -moz-box-align: center;
       -ms-flex-align: center;
       align-items: center;
+      justify-content: center;
     }
 
     &__tool {
-      -webkit-box-flex: 1;
+      /* -webkit-box-flex: 1;
       -webkit-flex: 1;
       -moz-box-flex: 1;
-      -ms-flex: 1;
-      flex: 1;
-      padding: 10px;
-      min-width: 150px;
+      -ms-flex: 1; */
+      /* flex: 1; */
+      flex-basis: 25%;
+      flex-grow: 1;
+      flex-shrink: 0;
+      margin: -1px;
+      border: 2px solid darken($grey-color-light, 5%);
+      /* min-width: 150px; */
+      cursor: default;
+      -webkit-transition: all 0.15s ease-in-out;
+      -o-transition: all 0.15s ease-in-out;
+      -moz-transition: all 0.15s ease-in-out;
+      transition: all 0.15s ease-in-out;
+      align-self: stretch;
+      padding: 40px 0;
 
-      @media only screen and (max-width: 1200px) {
-        min-width: 180px;
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.03);
       }
-      
-      @media only screen and (max-width: 979px) {
-        min-width: 150px;
+
+      p {
+        margin: 0;
+        padding: 0px 20px;
       }
       
       @media only screen and (max-width: 767px) {
-        min-width: 130px;
+        flex-basis: 45%;
+        padding: 45px 0;
       }
       
-      @media only screen and (max-width: 480px) {
+      /* @media only screen and (max-width: 480px) {
         min-width: 130px;
-      }
+      } */
     }
 
     p {
