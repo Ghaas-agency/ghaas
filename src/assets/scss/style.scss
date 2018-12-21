@@ -20,7 +20,8 @@ nav {
   left: 0;
   right: 0;
   z-index: 999;
-  -webkit-box-shadow: 0 3px 1px rgba(0, 0, 0, 0.1), 0 1px 1px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0 3px 1px rgba(0, 0, 0, 0.1),
+    0 1px 1px rgba(0, 0, 0, 0.25);
   -moz-box-shadow: 0 3px 1px rgba(0, 0, 0, 0.1), 0 1px 1px rgba(0, 0, 0, 0.25);
   box-shadow: 0 3px 1px rgba(0, 0, 0, 0.1), 0 1px 1px rgba(0, 0, 0, 0.25);
   max-width: 1600px;
@@ -137,7 +138,8 @@ nav {
     display: none;
   }
 
-  @media only screen and (max-width: 979px) {}
+  @media only screen and (max-width: 979px) {
+  }
 
   @media only screen and (max-width: 767px) {
     .container {
@@ -345,7 +347,7 @@ footer {
     -o-background-size: cover;
     background-size: cover;
     background-color: #ffffff;
-    background-image: url('../img/index-hero.svg');
+    background-image: url("../img/index-hero.svg");
 
     &__wrapper {
       width: 50%;
@@ -520,7 +522,7 @@ footer {
       padding: 20px 0;
 
       &:last-child {
-        padding-bottom: 0
+        padding-bottom: 0;
       }
 
       &--left {
@@ -722,7 +724,7 @@ footer {
     background-color: #ffffff;
     color: $grey-color-dark;
     padding-bottom: 100px;
-    background-image: url('../img/startups-hero.svg');
+    background-image: url("../img/startups-hero.svg");
     background-position: bottom;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -936,7 +938,7 @@ footer {
     background-color: #ffffff;
     color: $grey-color-dark;
     padding-bottom: 100px;
-    background-image: url('../img/smes-hero.svg');
+    background-image: url("../img/smes-hero.svg");
     background-position: top;
     -webkit-background-size: contain;
     -moz-background-size: contain;
@@ -1273,7 +1275,6 @@ footer {
     }
 
     @media (max-width: 767px) {
-
       &__what,
       &__culture,
       &__serious {
@@ -1288,8 +1289,6 @@ footer {
         min-width: 200px;
       }
     }
-
-    @media (max-width: 480px) {}
   }
 
   .section-positions {
@@ -1676,7 +1675,7 @@ footer {
   &-hero {
     margin-top: 65px;
     padding: 50px 0;
-    text-align: center
+    text-align: center;
   }
 
   &-clients {
@@ -1755,10 +1754,11 @@ footer {
       img {
         height: 270px;
         width: auto;
+        -o-object-fit: cover;
         object-fit: cover;
+        -o-object-position: 70% center;
         object-position: 70% center;
       }
-
     }
   }
 }
@@ -1776,7 +1776,9 @@ footer {
     color: lighten($grey-color-dark, $amount: 15%);
   }
 
-  h1, h2, h3 {
+  h1,
+  h2,
+  h3 {
     text-transform: none;
     font-weight: 600;
     letter-spacing: 0;
@@ -1795,9 +1797,12 @@ footer {
   nav {
     position: relative;
     background: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
     box-shadow: none;
 
     .nav-left img {
+      -webkit-filter: grayscale(100%) brightness(2);
       filter: grayscale(100%) brightness(2);
     }
 
@@ -1826,14 +1831,15 @@ footer {
 
   footer {
     background-color: darken($grey-color-dark, 10%);
-    border: 0
+    border: 0;
   }
 
   .contact-modal-content {
     border-top-color: $fitato-red;
   }
-  
+
   nav .menu-trigger {
+    -webkit-filter: saturate(100%);
     filter: saturate(100%);
   }
 
@@ -1847,7 +1853,7 @@ footer {
     margin-top: -67px;
     /* padding: 10px 0; */
     text-align: center;
-    background-image: url('../img/case-studies/fitato/fitato-design-bg.jpg');
+    background-image: url("../img/case-studies/fitato/fitato-design-bg.jpg");
     background-repeat: no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -1857,8 +1863,20 @@ footer {
     background-color: $grey-color-dark;
     background-attachment: fixed;
     height: 100vh;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.2);
     background-blend-mode: overlay;
@@ -1921,6 +1939,10 @@ footer {
       -moz-box-pack: center;
       -ms-flex-pack: center;
       justify-content: center;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -moz-box-align: center;
+      -ms-flex-align: center;
       align-items: center;
       z-index: 1;
       position: relative;
@@ -1936,10 +1958,16 @@ footer {
 
       img {
         max-height: 550px;
-        box-shadow: 0px 22px 35px -16px rgba(0,0,0,0.5);
+        -webkit-box-shadow: 0px 22px 35px -16px rgba(0, 0, 0, 0.5);
+        -moz-box-shadow: 0px 22px 35px -16px rgba(0, 0, 0, 0.5);
+        box-shadow: 0px 22px 35px -16px rgba(0, 0, 0, 0.5);
+        -webkit-border-radius: 45px;
+        -moz-border-radius: 45px;
         border-radius: 45px;
-        
+
         @media only screen and (max-width: 767px) {
+          -webkit-border-radius: 35px;
+          -moz-border-radius: 35px;
           border-radius: 35px;
         }
       }
@@ -1987,6 +2015,10 @@ footer {
 
         &:first-child {
           text-align: center;
+          -webkit-box-ordinal-group: 3;
+          -webkit-order: 2;
+          -moz-box-ordinal-group: 3;
+          -ms-flex-order: 2;
           order: 2;
         }
       }
@@ -2088,12 +2120,16 @@ footer {
       -ms-flex: 1;
       flex: 1;
       min-width: 350px;
+
+      @media only screen and (max-width: 380px) {
+        min-width: 300px;
+      }
     }
 
     img {
       max-height: 500px;
       vertical-align: middle;
-      margin: 0
+      margin: 0;
     }
 
     .line {
@@ -2145,6 +2181,10 @@ footer {
 
     &__left {
       padding-right: 15%;
+
+      @media only screen and (max-width: 767px) {
+        padding-right: 0%;
+      }
     }
 
     &__items {
@@ -2270,6 +2310,10 @@ footer {
       -moz-box-align: center;
       -ms-flex-align: center;
       align-items: center;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -moz-box-pack: center;
+      -ms-flex-pack: center;
       justify-content: center;
     }
 
@@ -2279,8 +2323,16 @@ footer {
       -moz-box-flex: 1;
       -ms-flex: 1; */
       /* flex: 1; */
+      -webkit-flex-basis: 25%;
+      -ms-flex-preferred-size: 25%;
       flex-basis: 25%;
+      -webkit-box-flex: 1;
+      -webkit-flex-grow: 1;
+      -moz-box-flex: 1;
+      -ms-flex-positive: 1;
       flex-grow: 1;
+      -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
       flex-shrink: 0;
       margin: -1px;
       border: 2px solid darken($grey-color-light, 5%);
@@ -2290,6 +2342,9 @@ footer {
       -o-transition: all 0.15s ease-in-out;
       -moz-transition: all 0.15s ease-in-out;
       transition: all 0.15s ease-in-out;
+      -webkit-align-self: stretch;
+      -ms-flex-item-align: stretch;
+      -ms-grid-row-align: stretch;
       align-self: stretch;
       padding: 40px 0;
 
@@ -2301,12 +2356,14 @@ footer {
         margin: 0;
         padding: 0px 20px;
       }
-      
+
       @media only screen and (max-width: 767px) {
+        -webkit-flex-basis: 45%;
+        -ms-flex-preferred-size: 45%;
         flex-basis: 45%;
         padding: 45px 0;
       }
-      
+
       /* @media only screen and (max-width: 480px) {
         min-width: 130px;
       } */
@@ -2330,12 +2387,12 @@ footer {
     padding-bottom: 100px; */
     background-color: $fitato-red;
     overflow: hidden;
-    
+
     &--full {
       vertical-align: middle;
       display: unset;
     }
-    
+
     &--mobile {
       vertical-align: middle;
       display: none;
@@ -2344,7 +2401,7 @@ footer {
     &__wrapper {
       padding: 0 5%;
     }
-    
+
     @media only screen and (max-width: 767px) {
       &__wrapper {
         padding: 30px 0;
@@ -2353,12 +2410,11 @@ footer {
       &--full {
         display: none;
       }
-      
+
       &--mobile {
         display: unset;
-      }  
+      }
     }
-
 
     /* &__items {
       display: -webkit-box;
@@ -2542,7 +2598,7 @@ footer {
   }
 }
 
-form>div {
+form > div {
   max-width: 600px;
 
   @media (max-width: 1200px) {
@@ -2600,7 +2656,7 @@ form>div {
       }
 
       &:last-child {
-        float: right
+        float: right;
       }
     }
   }
@@ -2646,7 +2702,7 @@ form>div {
   }
 
   &__closed {
-    background-color: #00C479;
+    background-color: #00c479;
     padding: 10px 25px;
     cursor: pointer;
   }
@@ -2663,7 +2719,10 @@ form>div {
   width: 100vw;
 }
 
-a, .button, input, textarea {
+a,
+.button,
+input,
+textarea {
   position: relative;
   z-index: 9;
 }
