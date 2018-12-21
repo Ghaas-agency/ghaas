@@ -1671,6 +1671,8 @@ footer {
 /* CASE STUDIES */
 
 .case-studies {
+  background-color: #ffffff;
+
   &-hero {
     margin-top: 65px;
     padding: 50px 0;
@@ -1748,6 +1750,13 @@ footer {
         -o-transform: translateY(-3px);
         transform: translateY(-3px);
         background-color: lighten($primary-color, 5%);
+      }
+
+      img {
+        height: 270px;
+        width: auto;
+        object-fit: cover;
+        object-position: 70% center;
       }
 
     }
@@ -1879,7 +1888,7 @@ footer {
   }
 
   &-intro {
-    padding: 50px 20%;
+    padding: 50px 10%;
     background-color: #ffffff;
     /* background-image: url('../img/case-studies/fitato/fitato-home.jpg');
     background-attachment: fixed;
@@ -1892,6 +1901,7 @@ footer {
       font-size: 24px;
       line-height: 1.5;
       margin: 0;
+      font-weight: 300;
     }
 
     &__items {
@@ -1908,6 +1918,7 @@ footer {
       -moz-box-pack: center;
       -ms-flex-pack: center;
       justify-content: center;
+      align-items: center;
     }
 
     &__item {
@@ -1928,6 +1939,7 @@ footer {
 
       h2 {
         margin-bottom: 15px;
+        margin-top: 0px;
       }
     }
 
@@ -2167,6 +2179,7 @@ footer {
 
   &-framework {
     padding: 50px 3%;
+    padding-bottom: 0;
     text-align: center;
     background-color: #ffffff;
 
@@ -2286,10 +2299,21 @@ footer {
   }
 
   &-results {
-    padding-top: 50px;
-    padding-bottom: 100px;
+    /* padding-top: 50px;
+    padding-bottom: 100px; */
+    background-color: #fafafa;
+    overflow: hidden;
 
-    &__items {
+    &__wrapper {
+      padding: 0 100px;
+
+      img {
+        vertical-align: middle;
+      }
+    }
+
+
+    /* &__items {
       display: -webkit-box;
       display: -webkit-flex;
       display: -moz-box;
@@ -2321,9 +2345,8 @@ footer {
       li,
       p {
         font-size: 22px;
-        /* color: #ffffff; */
       }
-    }
+    } */
   }
 
   &-download {
@@ -2580,4 +2603,20 @@ form>div {
     padding: 10px 25px;
     cursor: pointer;
   }
+}
+
+#particles-js {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  height: 100vh;
+  width: 100vw;
+}
+
+a, .button, input, textarea {
+  position: relative;
+  z-index: 9;
 }
