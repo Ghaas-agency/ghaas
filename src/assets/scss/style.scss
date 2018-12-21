@@ -1889,7 +1889,10 @@ footer {
 
   &-intro {
     padding: 50px 10%;
+    padding-bottom: 10px;
     background-color: #ffffff;
+    position: relative;
+    overflow: hidden;
     /* background-image: url('../img/case-studies/fitato/fitato-home.jpg');
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -1919,6 +1922,8 @@ footer {
       -ms-flex-pack: center;
       justify-content: center;
       align-items: center;
+      z-index: 1;
+      position: relative;
     }
 
     &__item {
@@ -1930,7 +1935,13 @@ footer {
       padding: 15px;
 
       img {
-        max-height: 470px;
+        max-height: 550px;
+        box-shadow: 0px 22px 35px -16px rgba(0,0,0,0.5);
+        border-radius: 45px;
+        
+        @media only screen and (max-width: 767px) {
+          border-radius: 35px;
+        }
       }
 
       &:first-child {
@@ -1943,12 +1954,25 @@ footer {
       }
     }
 
+    &--bottom-angle {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 250px 0 0 1600px;
+      border-color: transparent transparent transparent $fitato-red;
+      z-index: 0;
+    }
+
     @media only screen and (max-width: 979px) {
       padding: 50px 10%;
     }
 
     @media only screen and (max-width: 767px) {
-      padding: 50px 5%;
+      padding: 50px 2%;
 
       &__item {
         -webkit-box-flex: 100%;
@@ -1958,18 +1982,20 @@ footer {
         flex: 100%;
 
         img {
-          max-height: 350px;
+          max-height: 400px;
         }
 
         &:first-child {
           text-align: center;
+          order: 2;
         }
       }
     }
   }
 
   &-figures {
-    padding: 50px 0;
+    padding-top: 15px;
+    padding-bottom: 50px;
     background-color: $fitato-red;
 
     &__items {
@@ -2077,7 +2103,8 @@ footer {
   }
 
   &-problem {
-    padding: 50px 3%;
+    padding: 50px 5%;
+    padding-bottom: 25px;
     /* text-align: center; */
     background-color: #ffffff;
 
@@ -2178,8 +2205,8 @@ footer {
   }
 
   &-framework {
-    padding: 50px 3%;
-    padding-bottom: 0;
+    padding: 50px 5%;
+    padding-top: 25px;
     text-align: center;
     background-color: #ffffff;
 
@@ -2301,15 +2328,35 @@ footer {
   &-results {
     /* padding-top: 50px;
     padding-bottom: 100px; */
-    background-color: #fafafa;
+    background-color: $fitato-red;
     overflow: hidden;
+    
+    &--full {
+      vertical-align: middle;
+      display: unset;
+    }
+    
+    &--mobile {
+      vertical-align: middle;
+      display: none;
+    }
 
     &__wrapper {
-      padding: 0 100px;
-
-      img {
-        vertical-align: middle;
+      padding: 0 5%;
+    }
+    
+    @media only screen and (max-width: 767px) {
+      &__wrapper {
+        padding: 30px 0;
       }
+
+      &--full {
+        display: none;
+      }
+      
+      &--mobile {
+        display: unset;
+      }  
     }
 
 
