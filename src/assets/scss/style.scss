@@ -1851,7 +1851,6 @@ footer {
 
   &-hero {
     margin-top: -67px;
-    /* padding: 10px 0; */
     text-align: center;
     background-image: url("../img/case-studies/fitato/fitato-design-bg.jpg");
     background-repeat: no-repeat;
@@ -1883,9 +1882,10 @@ footer {
 
     @media only screen and (max-width: 767px) {
       margin-top: -64px;
-      background-position: 80% top;
+      background-position: center;
       background-color: rgba(0, 0, 0, 0.2);
       background-blend-mode: overlay;
+      background-image: url("../img/case-studies/fitato/fitato-design-bg-vertical.jpg");
     }
 
     p {
