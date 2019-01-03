@@ -1752,12 +1752,10 @@ footer {
       }
 
       img {
-        height: 270px;
-        width: auto;
+        max-height: 270px;
+        width: 100%;
         -o-object-fit: cover;
         object-fit: cover;
-        -o-object-position: 70% center;
-        object-position: 70% center;
       }
     }
   }
