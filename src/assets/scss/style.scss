@@ -2847,6 +2847,10 @@ footer {
     text-align: center;
     background-color: #ffffff;
 
+    p {
+      margin-bottom: 10px;
+    }
+
     &__items {
       display: -webkit-box;
       display: -webkit-flex;
@@ -2856,6 +2860,7 @@ footer {
       -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+      padding: 0 10%;
     }
 
     &__item {
@@ -2865,7 +2870,7 @@ footer {
       -ms-flex: 1;
       flex: 1;
       padding: 10px 20px;
-      min-width: 150px;
+      min-width: 350px;
       margin: 20px 0;
 
       @media only screen and (max-width: 979px) {
@@ -2881,26 +2886,18 @@ footer {
       }
 
       img {
-        max-height: 80px;
+        max-height: 250px;
       }
     }
   }
 
-  &-download {
+  &-process {
     padding: 50px 0;
     text-align: center;
-    /* background-color: #ffffff; */
-
-    &__wrapper {
-      margin-top: -100px;
-      background-color: $grey-color-dark;
-      padding: 50px 5%;
-      color: #ffffff;
-      -webkit-box-shadow: $primary-shadow;
-      -moz-box-shadow: $primary-shadow;
-      box-shadow: $primary-shadow;
-    }
+    background-color: #ffffff;
+    border-top: 1px solid $grey-color-light;
   }
+
 }
 
 /* CONTACT MODAL */
