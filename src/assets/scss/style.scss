@@ -1725,6 +1725,7 @@ footer {
       -moz-border-radius: 3px;
       border-radius: 3px;
       overflow: hidden;
+      margin: 20px;
 
       h3 {
         margin: 0;
@@ -1756,6 +1757,15 @@ footer {
         width: 100%;
         -o-object-fit: cover;
         object-fit: cover;
+        
+      }
+
+      &:last-child {
+        img {
+          -o-object-fit: contain;
+          object-fit: contain;
+          background-color: $grey-color-light;
+        }
       }
     }
   }
@@ -2500,7 +2510,15 @@ footer {
 
   nav {
     position: relative;
-    background: none;
+
+    .menu-trigger {
+      position: absolute;
+      top: -7px;
+      -webkit-filter: saturate(100%);
+      filter: saturate(100%);
+    }
+
+    /* background: none;
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none;
@@ -2526,7 +2544,7 @@ footer {
         color: darken($grey-color-light, 20%);
         border-color: darken($grey-color-light, 20%);
       }
-    }
+    } */
   }
 
   .section-talk {
@@ -2542,30 +2560,13 @@ footer {
     border-top-color: $yuyutsu;
   }
 
-  nav .menu-trigger {
-    -webkit-filter: saturate(100%);
-    filter: saturate(100%);
-  }
-
-  @media only screen and (max-width: 767px) {
-    nav .nav-right {
-      background-color: $yuyutsu;
-    }
-  }
-
   &-hero {
-    margin-top: -67px;
     text-align: center;
-    /* background-image: url("../img/case-studies/yuyutsu/yuyutsu-bg-it.png"); */
     background-repeat: no-repeat;
-    /* -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover; */
     background-size: 50%;
     background-position: left bottom;
-    background-color: $grey-color-dark;
+    background-color: #ffffff;
     background-attachment: fixed;
-    height: 100vh;
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-box;
@@ -2581,20 +2582,17 @@ footer {
     -moz-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    /* background-color: rgba(0, 0, 0, 0.2); */
-    /* background-blend-mode: overlay; */
+    padding: 100px 0;
+    padding-bottom: 150px;
+    overflow: hidden;
+    position: relative;
 
     @media only screen and (max-width: 767px) {
-      margin-top: -64px;
-      background-position: center;
-      background-color: rgba(0, 0, 0, 0.2);
-      background-blend-mode: overlay;
-      background-image: url("../img/case-studies/yuyutsu/yuyutsu-bg-it.png");
+      padding-top: 50px;
     }
 
     p {
       font-size: 26px;
-      color: #ffffff;
     }
 
     h1 {
@@ -2603,99 +2601,55 @@ footer {
       }
 
       img {
-        width: 180px;
+        max-width: 600px;
         margin: 0;
+      }
+    }
+
+    img {
+      max-width: 400px;
+      width: 100%;
+    }
+
+    &--top-curve {
+      width: 1880px;
+      border-top: 150px solid $yuyutsu;
+      border-radius: 50%/150px 150px 0 0;
+      background-color: #ffffff;
+      transform: translateX(-50%);
+      left: 50%;
+      position: absolute;
+      bottom: -70px;
+
+      @media only screen and (max-width: 979px) {
+        width: 1280px;
+      }
+  
+      @media only screen and (max-width: 767px) {
+        width: 920px;
+        bottom: -70px;
+      }
+      
+      @media only screen and (max-width: 480px) {
+        width: 720px;
+        bottom: -70px;
       }
     }
   }
 
   &-intro {
-    padding: 50px 10%;
-    background-color: #ffffff;
+    padding: 75px 17%;
+    padding-top: 10px;
+    background-color: $yuyutsu;
+    color: #ffffff;
     position: relative;
-    overflow: hidden;
-    /* background-image: url('../img/case-studies/fitato/fitato-home.jpg');
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-blend-mode: overlay; */
 
     p {
-      font-size: 24px;
-      line-height: 1.5;
-      margin: 0;
-      font-weight: 300;
+      color: #ffffff;
     }
 
-    &__items {
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -moz-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-      -webkit-box-pack: center;
-      -webkit-justify-content: center;
-      -moz-box-pack: center;
-      -ms-flex-pack: center;
-      justify-content: center;
-      -webkit-box-align: center;
-      -webkit-align-items: center;
-      -moz-box-align: center;
-      -ms-flex-align: center;
-      align-items: center;
-      z-index: 1;
-      position: relative;
-    }
-
-    &__item {
-      -webkit-box-flex: 1;
-      -webkit-flex: 1;
-      -moz-box-flex: 1;
-      -ms-flex: 1;
-      flex: 1;
-      padding: 15px;
-
-      img {
-        max-height: 550px;
-        -webkit-box-shadow: 0px 22px 35px -16px rgba(0, 0, 0, 0.5);
-        -moz-box-shadow: 0px 22px 35px -16px rgba(0, 0, 0, 0.5);
-        box-shadow: 0px 22px 35px -16px rgba(0, 0, 0, 0.5);
-        -webkit-border-radius: 45px;
-        -moz-border-radius: 45px;
-        border-radius: 45px;
-
-        @media only screen and (max-width: 767px) {
-          -webkit-border-radius: 35px;
-          -moz-border-radius: 35px;
-          border-radius: 35px;
-        }
-      }
-
-      &:first-child {
-        text-align: right;
-      }
-
-      h2 {
-        margin-bottom: 15px;
-        margin-top: 0px;
-      }
-    }
-
-    &--bottom-angle {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      width: 0;
-      height: 0;
-      border-style: solid;
-      border-width: 250px 0 0 1600px;
-      border-color: transparent transparent transparent $yuyutsu;
-      z-index: 0;
+    h3 {
+      margin-top: 60px;
     }
 
     @media only screen and (max-width: 979px) {
@@ -2703,199 +2657,61 @@ footer {
     }
 
     @media only screen and (max-width: 767px) {
-      padding: 50px 2%;
-
-      &__item {
-        -webkit-box-flex: 100%;
-        -webkit-flex: 100%;
-        -moz-box-flex: 100%;
-        -ms-flex: 100%;
-        flex: 100%;
-
-        img {
-          max-height: 400px;
-        }
-
-        &:first-child {
-          text-align: center;
-          -webkit-box-ordinal-group: 3;
-          -webkit-order: 2;
-          -moz-box-ordinal-group: 3;
-          -ms-flex-order: 2;
-          order: 2;
-        }
-      }
+      padding-left: 5%;
+      padding-right: 5%;
+      padding-top: 10px;
     }
   }
 
-  /* &-story {
-    padding: 50px 5%;
+  &-creatives {
+    padding: 50px 10%;
+    padding-bottom: 10px;
     background-color: #ffffff;
 
-    .container {
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -moz-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-      -webkit-box-pack: center;
-      -webkit-justify-content: center;
-      -moz-box-pack: center;
-      -ms-flex-pack: center;
-      justify-content: center;
-      -webkit-box-align: center;
-      -webkit-align-items: center;
-      -moz-box-align: center;
-      -ms-flex-align: center;
-      align-items: center;
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: reverse;
-      -webkit-flex-direction: row-reverse;
-      -moz-box-orient: horizontal;
-      -moz-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-      flex-direction: row-reverse;
+    @media only screen and (max-width: 767px) {
+      padding: 50px 5%;
     }
 
-    &__left,
-    &__right {
-      -webkit-box-flex: 1;
-      -webkit-flex: 1;
-      -moz-box-flex: 1;
-      -ms-flex: 1;
-      flex: 1;
-      min-width: 350px;
-
-      @media only screen and (max-width: 380px) {
-        min-width: 300px;
-      }
-    }
-
-    img {
-      max-height: 500px;
-      vertical-align: middle;
-      margin: 0;
-    }
-
-    .line {
-      margin: 0;
-      margin-bottom: 2.5em;
-    }
-  } */
-
-  &-problem {
-    padding: 50px 5%;
-    padding-bottom: 25px;
-    /* text-align: center; */
-    background-color: #ffffff;
-
-    p {
-      margin-bottom: 10px;
-    }
-
-    &__content {
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -moz-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-      -webkit-box-pack: center;
-      -webkit-justify-content: center;
-      -moz-box-pack: center;
-      -ms-flex-pack: center;
-      justify-content: center;
-      -webkit-box-align: center;
-      -webkit-align-items: center;
-      -moz-box-align: center;
-      -ms-flex-align: center;
-      align-items: center;
-    }
-
-    &__left,
-    &__right {
-      -webkit-box-flex: 1;
-      -webkit-flex: 1;
-      -moz-box-flex: 1;
-      -ms-flex: 1;
-      flex: 1;
-      min-width: 300px;
-    }
-
-    &__left {
-      padding-right: 15%;
+    h2 {
+      padding: 0 8%;
+      padding-bottom: 20px;
 
       @media only screen and (max-width: 767px) {
+        padding-left: 0%;
         padding-right: 0%;
       }
     }
 
-    .line {
-      margin: 0;
-      margin-bottom: 10px;
-    }
-  }
-
-  &-framework {
-    padding: 50px 5%;
-    padding-top: 25px;
-    text-align: center;
-    background-color: #ffffff;
-
-    p {
-      margin-bottom: 10px;
-    }
-
-    &__items {
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -moz-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-      padding: 0 10%;
-    }
-
-    &__item {
-      -webkit-box-flex: 1;
-      -webkit-flex: 1;
-      -moz-box-flex: 1;
-      -ms-flex: 1;
-      flex: 1;
-      padding: 10px 20px;
-      min-width: 350px;
-      margin: 20px 0;
-
-      @media only screen and (max-width: 979px) {
-        min-width: 250px;
-      }
+    img {
+      margin-bottom: 30px;
 
       @media only screen and (max-width: 767px) {
-        width: 100%;
-      }
-
-      p {
-        margin-bottom: 10px;
-      }
-
-      img {
-        max-height: 250px;
+        margin-left: -5%;
+        margin-right: -5%;
+        width: 110%;
+        max-width: 110%;
       }
     }
   }
 
   &-process {
-    padding: 50px 0;
-    text-align: center;
+    padding: 100px 17%;
+    padding-top: 10px;
     background-color: #ffffff;
-    border-top: 1px solid $grey-color-light;
+
+    @media only screen and (max-width: 767px) {
+      padding: 50px 5%;
+      padding-top: 10px;
+    }
+
+    h3 {
+      color: lighten($grey-color-dark, 10%);
+      margin-top: 40px;
+    }
+    
+    h2 {
+      margin-top: 60px;
+    }
   }
 
 }
