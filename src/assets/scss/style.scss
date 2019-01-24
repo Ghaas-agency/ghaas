@@ -2724,14 +2724,89 @@ footer {
     h2 {
       margin-top: 60px;
     }
+
+    &--thunder {
+      position: relative;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 25px;
+        left: -70px;
+        background-image: url('../img/case-studies/yuyutsu/thunder.svg');
+        height: 100px;
+        width: 50px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+      }
+
+      @media only screen and (max-width: 767px) {
+        display: none;
+      }
+    }
+
+    &--pencil {
+      position: relative;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 25px;
+        left: -70px;
+        background-image: url('../img/case-studies/yuyutsu/pencil.svg');
+        height: 100px;
+        width: 50px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+      }
+
+      @media only screen and (max-width: 767px) {
+        display: none;
+      }
+    }
   }
 
   &-collaterals {
-    padding: 100px 17%;
+    padding: 100px 0%;
     padding-top: 200px;
     background-color: #ffffff;
     position: relative;
     overflow: hidden;
+
+    h2, p {
+      padding-left: 17%;
+      padding-right: 17%;
+
+      @media only screen and (max-width: 767px) {
+        padding-left: 5%;
+        padding-right: 5%;
+      }
+    }
+
+    &--m {
+      display: none;
+      @media only screen and (max-width: 767px) {
+        display: block;
+      }
+    }
+    
+    &--l {
+      @media only screen and (max-width: 767px) {
+        display: none;
+      }
+    }
+
+    img {
+      margin: 50px auto;
+      max-width: 90%;
+      display: block;
+      
+      @media only screen and (max-width: 767px) {
+        max-width: 100%;
+      }
+    }
 
     &--top-curve {
       width: 1880px;
@@ -2749,12 +2824,12 @@ footer {
   
       @media only screen and (max-width: 767px) {
         width: 920px;
-        bottom: -70px;
+        /* bottom: -70px; */
       }
       
       @media only screen and (max-width: 480px) {
         width: 720px;
-        bottom: -70px;
+        /* bottom: -70px; */
       }
     }
   }
