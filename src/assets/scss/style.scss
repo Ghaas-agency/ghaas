@@ -2565,10 +2565,20 @@ footer {
     .container {
       padding-top: 100px;
       padding-bottom: 150px;
+
+      @media only screen and (max-width: 767px) {
+        padding-top: 0px;
+      }
     }
 
     @media only screen and (max-width: 767px) {
       padding-top: 50px;
+      -webkit-box-align: baseline;
+      -webkit-align-items: baseline;
+      -moz-box-align: baseline;
+      -ms-flex-align: baseline;
+      align-items: baseline;
+      min-height: 400px;
     }
 
     p {
@@ -2680,7 +2690,7 @@ footer {
       
       img {
         max-width: 450px;
-        max-width: 400px;
+        min-width: 400px;
       }
       
       @media only screen and (max-width: 767px) {
@@ -2688,6 +2698,11 @@ footer {
         padding-bottom: 30px;
         padding-top: 10px;
         order: 1 !important;
+
+        img {
+          max-width: 100%;
+          min-width: 300px;
+        }
       }
     }
 
