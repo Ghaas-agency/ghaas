@@ -4,17 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "node-sass --output-style compressed -w src/assets/scss/style.scss src/assets/css/style.css"
+    "sass": "node-sass --output-style compressed -w src/assets/scss/style.scss src/assets/css/style.css",
+    "develop": "pug src -w"
   },
   "keywords": [],
   "author": "Akshay Dhiman",
   "license": "MIT",
   "dependencies": {
-    "@material/textfield": "^0.39.1",
-    "node-sass": "^4.9.3"
+    "node-sass": "^4.12.0",
+    "pug-cli": "git+https://github.com/pugjs/pug-cli.git"
   },
-  "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^6.0.0"
-  }
+  "devDependencies": {}
 }
