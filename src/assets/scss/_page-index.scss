@@ -1,0 +1,382 @@
+.index {
+  .section-hero {
+    min-height: 90vh;
+    color: $grey-color-dark;
+    padding-bottom: 100px;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: #ffffff;
+    background-image: url("../img/index-hero.svg");
+
+    &__wrapper {
+      width: 50%;
+
+      .line {
+        margin: 0 auto 2.5em 0;
+      }
+    }
+
+    h1 {
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.5em;
+      font-weight: 300;
+      color: $grey-color-dark;
+      margin-bottom: 30px;
+    }
+
+    .container {
+      padding-top: 200px;
+    }
+
+    @media (max-width: 1200px) {
+      background-position-y: bottom;
+      background-position-x: 100%;
+
+      &__wrapper {
+        width: 75%;
+      }
+    }
+
+    @media (max-width: 979px) {
+      -webkit-background-size: 200% 200%;
+      -moz-background-size: 200%;
+      -o-background-size: 200%;
+      background-size: 200%;
+      background-position-y: bottom;
+      background-position-x: 100%;
+    }
+
+    @media (max-width: 767px) {
+      .container {
+        padding-top: 130px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      background-position-y: bottom;
+      background-position-x: 100%;
+      -webkit-background-size: 200% 200%;
+      -moz-background-size: 200%;
+      -o-background-size: 200%;
+      background-size: 200%;
+
+      &__wrapper {
+        width: 100%;
+      }
+    }
+
+    @media (max-width: 380px) {
+      -webkit-background-size: 170% 170%;
+      -moz-background-size: 170%;
+      -o-background-size: 170%;
+      background-size: 170%;
+    }
+  }
+
+  .hero-path {
+    position: absolute;
+    top: 0;
+    z-index: 0;
+  }
+
+  .section-we {
+    background-color: $primary-color;
+    margin: 0 150px;
+    margin-top: -100px;
+    padding: 100px 3%;
+    text-align: center;
+    color: $grey-color-light;
+    -webkit-box-shadow: $primary-shadow;
+    -moz-box-shadow: $primary-shadow;
+    box-shadow: $primary-shadow;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+
+    p {
+      font-size: 1.5em;
+    }
+
+    @media (max-width: 979px) {
+      margin: 0 100px;
+      margin-top: -100px;
+    }
+
+    @media (max-width: 767px) {
+      margin: 0 75px;
+      margin-top: -75px;
+      padding: 50px 3%;
+
+      p {
+        font-size: 1.25em;
+      }
+    }
+
+    @media (max-width: 480px) {
+      margin: 0 25px;
+      margin-top: -50px;
+    }
+  }
+
+  .section-problems {
+    padding-top: 100px;
+    padding-bottom: 60px;
+    text-align: center;
+
+    &__intro {
+      padding: 0 15%;
+
+      p {
+        margin-top: 1.5em;
+      }
+
+      @media (max-width: 767px) {
+        padding: 0 10%;
+      }
+
+      @media (max-width: 480px) {
+        padding: 0 5%;
+      }
+    }
+
+    &__items {
+      padding: 30px 15%;
+
+      @media (max-width: 979px) {
+        padding: 30px 10%;
+      }
+
+      @media (max-width: 767px) {
+        padding: 30px 5%;
+      }
+
+      @media (max-width: 480px) {
+        padding: 30px 0%;
+      }
+    }
+
+    &__item {
+      text-align: left;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: -moz-box;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      -webkit-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      -moz-box-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      -moz-box-align: center;
+      align-items: center;
+      padding: 20px 0;
+
+      &:last-child {
+        padding-bottom: 0;
+      }
+
+      &--left {
+        -webkit-box-flex: 1;
+        -ms-flex: 1;
+        -webkit-flex: 1;
+        -moz-box-flex: 1;
+        flex: 1;
+        min-width: 225px;
+        max-width: 250px;
+        margin: 20px;
+      }
+
+      &--right {
+        -webkit-box-flex: 2;
+        -ms-flex: 2;
+        -webkit-flex: 2;
+        -moz-box-flex: 2;
+        flex: 2;
+        margin: 20px;
+      }
+
+      @media (max-width: 767px) {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        -moz-box-pack: center;
+        justify-content: center;
+        padding: 25px 3%;
+
+        &--left {
+          -webkit-box-flex: 100%;
+          -ms-flex: 100%;
+          -webkit-flex: 100%;
+          -moz-box-flex: 100%;
+          flex: 100%;
+          -webkit-box-ordinal-group: 2;
+          -ms-flex-order: 1;
+          -webkit-order: 1;
+          -moz-box-ordinal-group: 2;
+          order: 1;
+        }
+
+        &--right {
+          -webkit-box-flex: 100%;
+          -ms-flex: 100%;
+          -webkit-flex: 100%;
+          -moz-box-flex: 100%;
+          flex: 100%;
+          -webkit-box-ordinal-group: 3;
+          -ms-flex-order: 2;
+          -webkit-order: 2;
+          -moz-box-ordinal-group: 3;
+          order: 2;
+        }
+      }
+    }
+
+    &__outro {
+      padding-top: 50px;
+    }
+  }
+
+  .section-why {
+    text-align: center;
+    padding: 100px 0;
+    background-color: $grey-color-dark;
+    color: $grey-color-light;
+
+    &__items {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: -moz-box;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      -webkit-flex-wrap: wrap;
+      flex-wrap: wrap;
+      padding: 0px 10%;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      -moz-box-pack: center;
+      justify-content: center;
+
+      @media (max-width: 767px) {
+        padding: 0px 5%;
+      }
+    }
+
+    &__item {
+      -webkit-box-flex: 1;
+      -ms-flex: 1;
+      -webkit-flex: 1;
+      -moz-box-flex: 1;
+      flex: 1;
+      padding: 20px;
+      min-width: 200px;
+      max-width: 250px;
+      margin: 20px;
+      background-color: $grey-color-light;
+      color: $grey-color-dark;
+      -webkit-border-radius: 2px;
+      -moz-border-radius: 2px;
+      border-radius: 2px;
+      border-top: 5px solid $primary-color;
+
+      svg {
+        width: 120px;
+      }
+    }
+  }
+
+  .section-clients {
+    text-align: center;
+    padding: 100px 5%;
+    padding-bottom: 75px;
+
+    h2 {
+      margin: 0;
+    }
+
+    @media (max-width: 767px) {
+      padding: 100px 0%;
+    }
+
+    &__items {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: -moz-box;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      -webkit-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      -moz-box-pack: center;
+      justify-content: center;
+    }
+
+    &__item {
+      padding: 30px;
+      -webkit-box-flex: 1;
+      -ms-flex: 1;
+      -webkit-flex: 1;
+      -moz-box-flex: 1;
+      flex: 1;
+      -ms-grid-column-align: center;
+      justify-self: center;
+      -ms-flex-item-align: center;
+      -webkit-align-self: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+      max-width: 150px;
+      -webkit-filter: grayscale(100%) opacity(80%);
+      filter: grayscale(100%) opacity(80%);
+      -webkit-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        -webkit-filter: grayscale(0%) opacity(100%);
+        filter: grayscale(0%) opacity(100%);
+      }
+
+      img {
+        max-height: 60px;
+      }
+
+      @media (max-width: 979px) {
+        -webkit-box-flex: 25%;
+        -ms-flex: 25%;
+        -webkit-flex: 25%;
+        -moz-box-flex: 25%;
+        flex: 25%;
+      }
+
+      @media (max-width: 767px) {
+        padding: 20px;
+      }
+
+      &:last-child {
+        max-width: 200px;
+      }
+    }
+
+    img:last-child {
+      max-height: 70px;
+    }
+  }
+}

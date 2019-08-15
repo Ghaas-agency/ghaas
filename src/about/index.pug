@@ -1,0 +1,178 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    meta(http-equiv='X-UA-Compatible' content='ie=edge')
+    title About Ghaas
+    link(href='https://fonts.googleapis.com/css?family=Nunito:300,300i,400,400i' rel='stylesheet')
+    link(rel='stylesheet' href='../assets/css/style.css')
+    link(rel='icon' type='image/png' href='../assets/img/ghaas-icon.png')
+    meta(name='image' content='https://ghaas.xyz/assets/img/ghaas-meta.jpg')
+    // Schema.org for Google
+    meta(itemprop='name' content='Ghaas: Premier Digital & Growth Marketing Agency in India')
+    meta(itemprop='description' content='Ghaas is Growth Hacking as a Service. A growth and digital marketing agency consisting of ex-founders and growth hackers who can help you grow your business, fast.')
+    meta(itemprop='image' content='https://ghaas.xyz/assets/img/ghaas-meta.jpg')
+    // Twitter
+    meta(name='twitter:card' content='summary')
+    meta(name='twitter:title' content='Ghaas: Premier Digital & Growth Marketing Agency in India')
+    meta(name='twitter:description' content='Ghaas is Growth Hacking as a Service. A growth and digital marketing agency consisting of ex-founders and growth hackers who can help you grow your business, fast.')
+    meta(name='twitter:site' content='@ghaas_agency')
+    meta(name='twitter:image:src' content='https://ghaas.xyz/assets/img/ghaas-meta.jpg')
+    // Open Graph general (Facebook, Pinterest & Google+)
+    meta(property='og:title' content='Ghaas: Premier Digital & Growth Marketing Agency in India')
+    meta(property='og:description' content='Ghaas is Growth Hacking as a Service. A growth and digital marketing agency consisting of ex-founders and growth hackers who can help you grow your business, fast.')
+    meta(property='og:url' content='http://ghaas.xyz')
+    meta(property='og:site_name' content='Ghaas: Premier Digital & Growth Marketing Agency in India')
+    meta(property='og:type' content='website')
+    meta(property='og:image' content='https://ghaas.xyz/assets/img/ghaas-meta.jpg')
+
+    script.
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-W7FJFBF');
+
+  body
+    noscript
+      iframe(src='https://www.googletagmanager.com/ns.html?id=GTM-W7FJFBF' height='0' width='0' style='display:none;visibility:hidden')
+
+    .visible
+      nav
+        .container
+          .nav-left
+            a(href='../')
+              img(src='../assets/img/ghaas-logo.svg' alt='ghaas logo' title='Growth Hacking as a Service')
+          .nav-right
+            ul
+              li
+                a(href='../growth-hacking-for-startups/') FOR STARTUPS
+              li
+                a(href='../growth-hacking-for-sme/') FOR SMEs
+              li
+                a.active(href='../about/') ABOUT US
+              li
+                a(href='../case-studies/') CASE STUDIES
+              li
+                a(href='../contact/') CONTACT
+          img.menu-trigger(src='../assets/img/menu.svg' alt='menu')
+          .menu-trigger-bg
+      main.about
+        section.section-hero
+          .container
+            .line
+            h1 About Ghaas
+            p
+              | We&apos;re a team of digital marketers, growth hackers, data nerds and content specialists, who&apos;ve come together with a very specific goal: to help your business grow, fast.
+            br
+            span#contact-modal-trigger.button Talk to us
+        section.section-team
+          .container
+            .line
+            h2 The Team
+            .section-team__items
+              .section-team__item
+                img(src='../assets/img/team/akshat-goyal.jpg' alt='akshat goyal')
+                h3 Akshat Goyal
+                p Chief
+              .section-team__item
+                img(src='../assets/img/team/sagnik-sarkar.jpg' alt='sagnik sarkar')
+                h3 Sagnik Sarkar
+                p Growth Marketer (Content Specialist)
+              .section-team__item
+                img(src='../assets/img/team/akshay-dhiman.jpg' alt='akshay dhiman')
+                h3 Akshay Dhiman
+                p Web Developer
+              .section-team__item
+                img(src='../assets/img/team/prateek-jain.jpg' alt='prateek jain')
+                h3 Prateek Jain
+                p Digital Marketer
+              .section-team__item
+                img(src='../assets/img/team/malcolm-rebello.jpg' alt='malcolm rebello')
+                h3 Malcolm Rebello
+                p Creative Head
+              .section-team__item
+                img(src='../assets/img/team/amandeep-singh.jpg' alt='amandeep singh')
+                h3 Amandeep Singh
+                p Visual Designer
+      section.section-talk
+        .container
+          .line
+          h2.h3 Let&apos;s talk about growing your business
+          span#contact-modal-trigger.button Get in touch
+      footer
+        .container
+          p
+            a(href='https://www.linkedin.com/company/ghaas-agency/' target='_blank' rel='noopener noreferrer')
+              img(src='../assets/img/linkedin-white.svg' alt='linkedin')
+            a(href='https://twitter.com/ghaas_agency' target='_blank' rel='noopener noreferrer')
+              img(src='../assets/img/twitter-white.svg' alt='twitter')
+            a(href='https://www.instagram.com/ghaas.xyz/' target='_blank' rel='noopener noreferrer')
+              img(src='../assets/img/instagram-no-color.svg' alt='instagram')
+            a(href='https://www.meetup.com/Growth-Marketing-Pune/' target='_blank' rel='noopener noreferrer')
+              img(src='../assets/img/meetup-white.svg' alt='meetup')
+          p
+            a(href='../privacy-policy/') Privacy Policy
+          small
+            | &copy; 
+            span.current-year
+            |  Ghaas
+    #contact-modal
+      .contact-modal-content
+        span.modal-close &times;
+        h3 Contact Us
+        p Please enter your details and we&apos;ll get in touch soon.
+        #mc_embed_signup
+          form#mc-embedded-subscribe-form.validate(action='https://xyz.us12.list-manage.com/subscribe/post?u=2c4041c68da79c12074045904&id=fe8c495a2f' method='post' name='mc-embedded-subscribe-form' target='_blank' novalidate='')
+            #mc_embed_signup_scroll
+              .mc-field-group
+                label(for='mce-FULLNAME') Name 
+                input#mce-FULLNAME.required(type='text' value='' name='FULLNAME' placeholder='John Doe')
+              .mc-field-group
+                label(for='mce-EMAIL') Email Address 
+                input#mce-EMAIL.required.email(type='email' value='' name='EMAIL' placeholder='john@doe.com')
+              .mc-field-group
+                label(for='mce-MESSAGE') Message (with website URL) 
+                textarea#mce-MESSAGE.required(name='MESSAGE' placeholder='Enter your message')
+              #mce-responses.clear
+                #mce-error-response.response(style='display:none')
+                #mce-success-response.response(style='display:none')
+              // real people should not fill this in and expect good things - do not remove this or risk form bot signups
+              div(style='position: absolute; left: -5000px;' aria-hidden='true')
+                input(type='text' name='b_2c4041c68da79c12074045904_fe8c495a2f' tabindex='-1' value='')
+              .clear
+                input#mc-embedded-subscribe.button(type='submit' value='SUBMIT' name='subscribe')
+    .bottom-tab-contact-form
+      .bottom-tab-contact-form__hook
+        p Free 30 Min Consultation
+        p
+          img(src='../assets/img/expand_less.svg' alt='expand less icon')
+      .bottom-tab-contact-form__content
+        .bottom-tab-contact-form--close
+          img(src='../assets/img/expand_more.svg' alt='expand more icon' width='40')
+        h3 Free 30 Min Consultation
+        p
+          | Get your website reviewed by our experts. Get actionable tactics to improve your rankings, traffic and conversion rates.
+        p
+          strong No obligation!
+        #mc_embed_signup
+          form#mc-embedded-subscribe-form.validate(action='https://xyz.us12.list-manage.com/subscribe/post?u=2c4041c68da79c12074045904&id=fe8c495a2f' method='post' name='mc-embedded-subscribe-form' target='_blank' novalidate='')
+            #mc_embed_signup_scroll
+              .mc-field-group
+                label(for='mce-FULLNAME') Name 
+                input#mce-FULLNAME.required(type='text' value='' name='FULLNAME' placeholder='John Doe')
+              .mc-field-group
+                label(for='mce-EMAIL') Email Address 
+                input#mce-EMAIL.required.email(type='email' value='' name='EMAIL' placeholder='john@doe.com')
+              .mc-field-group
+                label(for='mce-MESSAGE') Message (with website URL) 
+                textarea#mce-MESSAGE.required(name='MESSAGE' placeholder='Enter your message')
+              #mce-responses.clear
+                #mce-error-response.response(style='display:none')
+                #mce-success-response.response(style='display:none')
+              div(style='position: absolute; left: -5000px;' aria-hidden='true')
+                input(type='text' name='b_2c4041c68da79c12074045904_fe8c495a2f' tabindex='-1' value='')
+              .clear
+                input#mc-embedded-subscribe.button(type='submit' value='SUBMIT' name='subscribe')
+    script(src='../assets/js/app.js')

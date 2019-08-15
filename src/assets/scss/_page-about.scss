@@ -1,0 +1,130 @@
+.about {
+  .section-hero {
+    min-height: 60vh;
+    background-color: $grey-color-dark;
+    color: $grey-color-light;
+    text-align: center;
+    padding: 0 15% 100px 15%;
+
+    p {
+      font-size: 1.5em;
+      font-weight: 300;
+    }
+
+    .container {
+      padding-top: 150px;
+    }
+
+    .button {
+      margin-top: 1em;
+    }
+
+    @media (max-width: 767px) {
+      padding: 0 10% 100px 10%;
+    }
+
+    @media (max-width: 480px) {
+      padding: 0 5% 100px 5%;
+    }
+
+    @media (min-height: 800px) {
+      min-height: 30vh;
+      padding-bottom: 100px;
+    }
+  }
+
+  .section-team {
+    text-align: center;
+    padding: 100px 10%;
+
+    &__items {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: -moz-box;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      -webkit-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      -moz-box-pack: center;
+      justify-content: center;
+      -webkit-box-align: start;
+      -ms-flex-align: start;
+      -webkit-align-items: flex-start;
+      -moz-box-align: start;
+      align-items: flex-start;
+    }
+
+    &__item {
+      -webkit-box-flex: 33%;
+      -ms-flex: 33%;
+      -webkit-flex: 33%;
+      -moz-box-flex: 33%;
+      flex: 33%;
+      margin: 25px 50px;
+      max-width: 210px;
+
+      img {
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+        -webkit-box-shadow: $primary-shadow;
+        -moz-box-shadow: $primary-shadow;
+        box-shadow: $primary-shadow;
+        width: 60%;
+      }
+    }
+
+    @media (max-width: 979px) {
+      padding: 100px 10%;
+
+      &__item {
+        margin: 25px;
+        -webkit-box-flex: 33%;
+        -ms-flex: 33%;
+        -webkit-flex: 33%;
+        -moz-box-flex: 33%;
+        flex: 33%;
+
+        img {
+          width: 80%;
+        }
+      }
+    }
+
+    @media (max-width: 767px) {
+      padding: 100px 5%;
+
+      &__item {
+        margin: 25px;
+        -webkit-box-flex: 25%;
+        -ms-flex: 25%;
+        -webkit-flex: 25%;
+        -moz-box-flex: 25%;
+        flex: 25%;
+
+        img {
+          width: 80%;
+        }
+      }
+    }
+
+    @media (max-width: 480px) {
+      &__item {
+        margin: 25px;
+        -webkit-box-flex: 50%;
+        -ms-flex: 50%;
+        -webkit-flex: 50%;
+        -moz-box-flex: 50%;
+        flex: 50%;
+
+        img {
+          width: 80%;
+        }
+      }
+    }
+  }
+}

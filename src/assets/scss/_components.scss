@@ -69,3 +69,18 @@ a.button {
 .weight-300 {
   font-weight: 300;
 }
+
+.visible {
+  background-color: $grey-color-light;
+}
+
+.section-talk {
+  padding: 100px 15%;
+  text-align: center;
+  background-color: $grey-color-dark;
+  color: $grey-color-light;
+
+  @media (max-width: 767px) {
+    padding: 100px 5%;
+  }
+}

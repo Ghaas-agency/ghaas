@@ -1,0 +1,38 @@
+.privacy {
+  .section-hero {
+    min-height: 200px;
+    background-color: $grey-color-dark;
+    color: $grey-color-light;
+    text-align: center;
+    padding: 0 15% 80px 15%;
+
+    p {
+      font-size: 1.5em;
+      font-weight: 300;
+    }
+
+    .container {
+      padding-top: 150px;
+    }
+
+    .button {
+      margin-top: 1em;
+    }
+
+    @media (max-width: 767px) {
+      padding: 0 10% 100px 10%;
+    }
+
+    @media (max-width: 480px) {
+      padding: 0 5% 100px 5%;
+    }
+  }
+
+  .section-content {
+    padding: 100px 15%;
+
+    @media (max-width: 767px) {
+      padding: 100px 5%;
+    }
+  }
+}

@@ -1,0 +1,104 @@
+.contact {
+  .section-hero {
+    min-height: 300px;
+    background-color: $grey-color-dark;
+    color: $grey-color-light;
+    text-align: center;
+    padding: 0 15% 150px 15%;
+
+    p {
+      font-size: 1.5em;
+      font-weight: 300;
+    }
+
+    .container {
+      padding-top: 150px;
+    }
+
+    .button {
+      margin-top: 1em;
+    }
+
+    @media (max-width: 767px) {
+      padding: 0 10% 100px 10%;
+    }
+
+    @media (max-width: 480px) {
+      padding: 0 5% 100px 5%;
+    }
+  }
+
+  .section-form {
+    padding: 50px 10% 100px 10%;
+    min-height: 300px;
+
+    &__left {
+      margin-top: -125px;
+      background-color: $primary-color;
+      padding: 30px;
+      padding-bottom: 50px;
+      color: $grey-color-light;
+      -webkit-border-radius: 2px;
+      -moz-border-radius: 2px;
+      border-radius: 2px;
+      -webkit-box-shadow: $primary-shadow;
+      -moz-box-shadow: $primary-shadow;
+      box-shadow: $primary-shadow;
+      width: 55%;
+      float: left;
+
+      form {
+        div {
+          max-width: 90%;
+        }
+      }
+
+      input[type="submit"] {
+        background-color: $grey-color-light;
+        color: $grey-color-dark;
+        border: 1px solid $grey-color-dark;
+
+        &:hover {
+          -webkit-box-shadow: $secondary-shadow;
+          -moz-box-shadow: $secondary-shadow;
+          box-shadow: $secondary-shadow;
+        }
+      }
+    }
+
+    &__right {
+      width: 35%;
+      float: right;
+    }
+
+    @media (max-width: 979px) {
+      &__left {
+        width: 90%;
+        float: none;
+        display: block;
+      }
+
+      &__right {
+        width: 100%;
+        float: none;
+        display: block;
+        padding-top: 50px;
+      }
+    }
+
+    @media (max-width: 767px) {
+      &__left {
+        width: 85%;
+      }
+    }
+
+    @media (max-width: 480px) {
+      padding: 50px 0% 100px 0%;
+
+      &__left {
+        max-width: 90%;
+        width: auto;
+      }
+    }
+  }
+}

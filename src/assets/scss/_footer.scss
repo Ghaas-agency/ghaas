@@ -1,0 +1,23 @@
+footer {
+  background-color: $grey-color-dark;
+  color: darken($grey-color-light, 25%);
+  padding: 22px 0;
+  text-align: center;
+  border-top: 1px solid $primary-color;
+
+  a {
+    vertical-align: middle;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: $grey-color-light;
+    text-decoration: none;
+  }
+
+  img {
+    width: auto;
+    height: 20px;
+    margin: 5px 10px;
+  }
+}
