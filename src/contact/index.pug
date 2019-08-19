@@ -1,114 +1,49 @@
+include ../components/_index.pug
 doctype html
 html(lang="en")
   head
-    meta(charset="UTF-8")
-    meta(name="viewport" content="width=device-width, initial-scale=1.0")
-    meta(http-equiv="X-UA-Compatible" content="ie=edge")
-    title Contact Ghaas
-    meta(name="description" content="Ghaas is Growth Hacking as a Service. A growth and digital marketing agency consisting of ex-founders and growth hackers who can help you grow your business, fast.")
-    link(href="https://fonts.googleapis.com/css?family=Nunito:300,300i,400,400i" rel="stylesheet")
-    link(rel="stylesheet" href="../assets/css/style.css")
-    link(rel="icon" type="image/png" href="../assets/img/ghaas-icon.png")
-    meta(name="image" content="https://ghaas.xyz/assets/img/ghaas-meta.jpg")
-    // Schema.org for Google
-    meta(itemprop="name" content="Ghaas: Premier Digital & Growth Marketing Agency in India")
-    meta(itemprop="description" content="Ghaas is Growth Hacking as a Service. A growth and digital marketing agency consisting of ex-founders and growth hackers who can help you grow your business, fast.")
-    meta(itemprop="image" content="https://ghaas.xyz/assets/img/ghaas-meta.jpg")
-    // Twitter
-    meta(name="twitter:card" content="summary")
-    meta(name="twitter:title" content="Ghaas: Premier Digital & Growth Marketing Agency in India")
-    meta(name="twitter:description" content="Ghaas is Growth Hacking as a Service. A growth and digital marketing agency consisting of ex-founders and growth hackers who can help you grow your business, fast.")
-    meta(name="twitter:site" content="@ghaas_agency")
-    meta(name="twitter:image:src" content="https://ghaas.xyz/assets/img/ghaas-meta.jpg")
-    // Open Graph general (Facebook, Pinterest & Google+)
-    meta(property="og:title" content="Ghaas: Premier Digital & Growth Marketing Agency in India")
-    meta(property="og:description" content="Ghaas is Growth Hacking as a Service. A growth and digital marketing agency consisting of ex-founders and growth hackers who can help you grow your business, fast.")
-    meta(property="og:url" content="http://ghaas.xyz")
-    meta(property="og:site_name" content="Ghaas: Premier Digital & Growth Marketing Agency in India")
-    meta(property="og:type" content="website")
-    meta(property="og:image" content="https://ghaas.xyz/assets/img/ghaas-meta.jpg")
-    // Google Tag Manager
-    script.
-      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-      })(window,document,'script','dataLayer','GTM-W7FJFBF');
-    // End Google Tag Manager
+    +headMeta('Contact Ghaas',
+      'Ghaas is Growth Hacking as a Service. A growth and digital marketing agency consisting of ex-founders and growth hackers who can help you grow your business, fast.',
+      '../')
+    +headScripts('../')
+
   body
-    // Google Tag Manager (noscript)
-    noscript
-      iframe(src="https://www.googletagmanager.com/ns.html?id=GTM-W7FJFBF" height="0" width="0" style="display:none;visibility:hidden")
-    // End Google Tag Manager (noscript)
-    .visible
-      nav
+    +nav('../', 'contact')
+
+    main.contact
+      section.section-hero
         .container
-          .nav-left
-            a(href="../")
-              img(src="../assets/img/ghaas-logo.svg" alt="ghaas logo" title="Growth Hacking as a Service")
-          .nav-right
-            ul
-              li
-                a(href="../growth-hacking-for-startups/") FOR STARTUPS
-              li
-                a(href="../growth-hacking-for-sme/") FOR SMEs
-              li
-                a(href="../case-studies/") CASE STUDIES
-              li
-                a(href="https://ghaas.xyz/blog") BLOG
-              li
-                a.active(href="../contact/") CONTACT
-          img.menu-trigger(src="../assets/img/menu.svg" alt="menu")
-          .menu-trigger-bg
-      main.contact
-        section.section-hero
-          .container
-            .line
-            h1 Contact Ghaas
-            p Let's talk about growing your business.
-        section.section-form
-          .container
-            .section-form__left
-              p Please enter your details and we'll get in touch soon.
-              #mc_embed_signup
-                form#mc-embedded-subscribe-form.validate(action="https://xyz.us12.list-manage.com/subscribe/post?u=2c4041c68da79c12074045904&id=fe8c495a2f" method="post" name="mc-embedded-subscribe-form" target="_blank" novalidate="")
-                  #mc_embed_signup_scroll
-                    .mc-field-group
-                      label(for="mce-FULLNAME") Name 
-                      input#mce-FULLNAME.required(type="text" value="" name="FULLNAME" placeholder="John Doe")
-                    .mc-field-group
-                      label(for="mce-EMAIL") Email Address 
-                      input#mce-EMAIL.required.email(type="email" value="" name="EMAIL" placeholder="john@doe.com")
-                    .mc-field-group
-                      label(for="mce-MESSAGE") Message (with website URL) 
-                      textarea#mce-MESSAGE.required(name="MESSAGE" placeholder="Enter your message")
-                    #mce-responses.clear
-                      #mce-error-response.response(style="display:none")
-                      #mce-success-response.response(style="display:none")
-                    // real people should not fill this in and expect good things - do not remove this or risk form bot signups
-                    div(style="position: absolute; left: -5000px;" aria-hidden="true")
-                      input(type="text" name="b_2c4041c68da79c12074045904_fe8c495a2f" tabindex="-1" value="")
-                    .clear
-                      input#mc-embedded-subscribe.button(type="submit" value="SUBMIT" name="subscribe")
-            .section-form__right
-              p
-                | Or reach us out at: 
-                a(href="mailto:contact@ghaas.xyz") contact@ghaas.xyz
-      footer
+          .line
+          h1 Contact Ghaas
+          p Let's talk about growing your business.
+      section.section-form
         .container
-          p
-            a(href="https://www.linkedin.com/company/ghaas-agency/" target="_blank" rel="noopener noreferrer")
-              img(src="../assets/img/linkedin-white.svg" alt="linkedin")
-            a(href="https://twitter.com/ghaas_agency" target="_blank" rel="noopener noreferrer")
-              img(src="../assets/img/twitter-white.svg" alt="twitter")
-            a(href="https://www.instagram.com/ghaas.xyz/" target="_blank" rel="noopener noreferrer")
-              img(src="../assets/img/instagram-no-color.svg" alt="instagram")
-            a(href="https://www.meetup.com/Growth-Marketing-Pune/" target="_blank" rel="noopener noreferrer")
-              img(src="../assets/img/meetup-white.svg" alt="meetup")
-          p
-            a(href="../privacy-policy/") Privacy Policy
-          small
-            | © 
-            span.current-year
-            |  Ghaas
+          .section-form__left
+            p Please enter your details and we'll get in touch soon.
+            #mc_embed_signup
+              form#mc-embedded-subscribe-form.validate(action="https://xyz.us12.list-manage.com/subscribe/post?u=2c4041c68da79c12074045904&id=fe8c495a2f" method="post" name="mc-embedded-subscribe-form" target="_blank" novalidate="")
+                #mc_embed_signup_scroll
+                  .mc-field-group
+                    label(for="mce-FULLNAME") Name 
+                    input#mce-FULLNAME.required(type="text" value="" name="FULLNAME" placeholder="John Doe")
+                  .mc-field-group
+                    label(for="mce-EMAIL") Email Address 
+                    input#mce-EMAIL.required.email(type="email" value="" name="EMAIL" placeholder="john@doe.com")
+                  .mc-field-group
+                    label(for="mce-MESSAGE") Message (with website URL) 
+                    textarea#mce-MESSAGE.required(name="MESSAGE" placeholder="Enter your message")
+                  #mce-responses.clear
+                    #mce-error-response.response(style="display:none")
+                    #mce-success-response.response(style="display:none")
+                  // real people should not fill this in and expect good things - do not remove this or risk form bot signups
+                  div(style="position: absolute; left: -5000px;" aria-hidden="true")
+                    input(type="text" name="b_2c4041c68da79c12074045904_fe8c495a2f" tabindex="-1" value="")
+                  .clear
+                    input#mc-embedded-subscribe.button(type="submit" value="SUBMIT" name="subscribe")
+          .section-form__right
+            p
+              | Or reach us out at: 
+              a(href="mailto:contact@ghaas.xyz") contact@ghaas.xyz
+
+    +footer('../')
     script(src="../assets/js/app.js")

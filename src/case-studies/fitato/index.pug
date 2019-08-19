@@ -1,340 +1,227 @@
+include ../../components/_index.pug
 doctype html
 html(lang="en")
   head
-    meta(charset="UTF-8")
-    meta(name="viewport" content="width=device-width, initial-scale=1.0")
-    meta(http-equiv="X-UA-Compatible" content="ie=edge")
-    title Fitato Case Study | Ghaas
-    meta(name="description" content="The best growth and digital marketing services for small and medium enterprises. We apply startup growth principles to your business to achieve exponential growth for your business.")
-    link(href="https://fonts.googleapis.com/css?family=Nunito:300,300i,400,400i,600,600i" rel="stylesheet")
-    link(rel="stylesheet" href="../../assets/css/style.css")
-    link(rel="icon" type="image/png" href="../../assets/img/ghaas-icon.png")
-    meta(name="image" content="https://ghaas.xyz/assets/img/ghaas-meta.jpg")
-    // Schema.org for Google
-    meta(itemprop="name" content="Ghaas: Premier Digital & Growth Marketing Agency in India")
-    meta(itemprop="description" content="Ghaas is Growth Hacking as a Service. A growth and digital marketing agency consisting of ex-founders and growth hackers who can help you grow your business, fast.")
-    meta(itemprop="image" content="https://ghaas.xyz/assets/img/ghaas-meta.jpg")
-    // Twitter
-    meta(name="twitter:card" content="summary")
-    meta(name="twitter:title" content="Ghaas: Premier Digital & Growth Marketing Agency in India")
-    meta(name="twitter:description" content="Ghaas is Growth Hacking as a Service. A growth and digital marketing agency consisting of ex-founders and growth hackers who can help you grow your business, fast.")
-    meta(name="twitter:site" content="@ghaas_agency")
-    meta(name="twitter:image:src" content="https://ghaas.xyz/assets/img/ghaas-meta.jpg")
-    // Open Graph general (Facebook, Pinterest & Google+)
-    meta(property="og:title" content="Ghaas: Premier Digital & Growth Marketing Agency in India")
-    meta(property="og:description" content="Ghaas is Growth Hacking as a Service. A growth and digital marketing agency consisting of ex-founders and growth hackers who can help you grow your business, fast.")
-    meta(property="og:url" content="http://ghaas.xyz")
-    meta(property="og:site_name" content="Ghaas: Premier Digital & Growth Marketing Agency in India")
-    meta(property="og:type" content="website")
-    meta(property="og:image" content="https://ghaas.xyz/assets/img/ghaas-meta.jpg")
-    // Google Tag Manager
-    script.
-      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-      })(window,document,'script','dataLayer','GTM-W7FJFBF');
-    // End Google Tag Manager
+    +headMeta('Fitato Case Study | Ghaas',
+      'The best growth and digital marketing services for small and medium enterprises. We apply startup growth principles to your business to achieve exponential growth for your business.',
+      '../../')
+    +headScripts('../../')
+
   body.cs-fitato
-    // Google Tag Manager (noscript)
-    noscript
-      iframe(src="https://www.googletagmanager.com/ns.html?id=GTM-W7FJFBF" height="0" width="0" style="display:none;visibility:hidden")
-    // End Google Tag Manager (noscript)
-    .visible
-      nav
-        .container
-          .nav-left
-            a(href="../../")
-              img(src="../../assets/img/ghaas-logo.svg" alt="ghaas logo" title="Growth Hacking as a Service")
-          .nav-right
-            ul
-              li
-                a(href="../../growth-hacking-for-startups/") FOR STARTUPS
-              li
-                a(href="../../growth-hacking-for-sme/") FOR SMEs
-              li
-                a.active(href="../../case-studies/") CASE STUDIES
-              li
-                a(href="https://ghaas.xyz/blog") BLOG
-              li
-                a(href="../../contact/") CONTACT
-          img.menu-trigger(src="../../assets/img/menu.svg" alt="menu")
-          .menu-trigger-bg
-      main
-        section.cs-fitato-hero
-          .container
-            // <div class="line"></div>
-            h1
-              a(href="https://www.fitato.fit")
-                img(src="../../assets/img/case-studies/fitato/fitato-logo-white.svg" alt="fitato logo" title="Fitato Case Study")
-            p Consulting CMO and Full Stack Growth Marketing
-        section.cs-fitato-intro
-          .container
-            .cs-fitato-intro__items
-              .cs-fitato-intro__item
-                img#fitato-app-phone-img(src="../../assets/img/case-studies/fitato/fitato-app.png" alt="fitato app")
-              #fitato-app-phone-content.cs-fitato-intro__item
-                h2 Fitato: Your Fitness Freedom
-                p
-                  | Fitato is a mobile-based fitness membership solution that gives access to multiple gyms and fitness studios to its users.
-          .cs-fitato-intro--bottom-angle
-        section.cs-fitato-figures
-          .container
-            .cs-fitato-figures__items
-              .cs-fitato-figures__item
-                p 4X
-                p monthly app installs
-              .cs-fitato-figures__item
-                p 25X
-                p revenue growth
-              .cs-fitato-figures__item
-                p 15%
-                p conversion rate
-              .cs-fitato-figures__item
-                p 35%
-                p retention rate
-        section.cs-fitato-story
-          .container
-            .cs-fitato-story__left
-              .line
-              h2 The Story
-              p
-                | Fitato was started by two college friends with a dream to revolutionise the fitness industry.
-              p
-                | With $100K in seed funding, they created a technology platform that enables a user to access any gym or fitness studio across the town. They partnered with 100 gyms and fitness studios in Pune. Things were going according to plan until they went out and started selling their Fitato memberships.
-              p
-                | Fitato eventually reached out to us and engaged us for building their growth story.
-              p Period of engagement: 10 months (contd.)
-            .cs-fitato-story__right
-              img(src="../../assets/img/case-studies/fitato/fitato-discover.jpg" alt="Fitato")
-        section.cs-fitato-problem
-          .container
-            .cs-fitato-problem__content
-              .cs-fitato-problem__left
-                .line
-                h2 The Problem
-                p
-                  | Fitato is a high growth startup. The challenge was to build the processes that would script the growth story. We began our engagement by running some experiments to clearly identify what the problems were.
-                .cs-fitato-problem__items
-                  .cs-fitato-problem__item
-                    img(src="../../assets/img/case-studies/fitato/who.svg" alt="who icon")
-                    p
-                      span.cs-fitato-problem__item--emphasis Who
-                      br
-                      | are Fitato's audience?
-                  .cs-fitato-problem__item
-                    img(src="../../assets/img/case-studies/fitato/prospects.svg" alt="where icon")
-                    p
-                      span.cs-fitato-problem__item--emphasis Where
-                      br
-                      | do you reach them?
-                  .cs-fitato-problem__item
-                    img(src="../../assets/img/case-studies/fitato/how.svg" alt="how icon")
-                    p
-                      span.cs-fitato-problem__item--emphasis How
-                      br
-                      | do you explain Fitato to them?
-              .cs-fitato-problem__right
-                img(src="../../assets/img/case-studies/fitato/fitato-home.jpg" alt="fitato design")
-        section.cs-fitato-framework
-          .container
-            .line
-            h2 The Framework
-            .cs-fitato-framework__items
-              .cs-fitato-framework__item
-                img(src="../../assets/img/case-studies/fitato/prospects.svg" alt="prospects")
-                h3 Prospects
-                p
-                  strong Who are we trying to attract
-                p Identify cohorts, profile, pain points, queries
-              .cs-fitato-framework__item
-                img(src="../../assets/img/case-studies/fitato/playbooks.svg" alt="playbooks")
-                h3 Playbooks
-                p
-                  strong How do we attract traffic
-                p
-                  | Content, Positioning, Branding, Advertising Affiliates, Build Channels, Differentiate
-              .cs-fitato-framework__item
-                img(src="../../assets/img/case-studies/fitato/platform.svg" alt="platform")
-                h3 Platform
-                p
-                  strong How are we capturing prospects
-                p Pique interest, Nurture Funnels, landers, analytics, email campaigns, CRM
-              .cs-fitato-framework__item
-                img(src="../../assets/img/case-studies/fitato/product.svg" alt="product")
-                h3 Product
-                p
-                  strong How do we convert users
-                p Onboarding, word of mouth, virality
-        //
-          <section class="cs-fitato-results">
-          <div class="container">
-          <div class="cs-fitato-results__items">
-          <div class="cs-fitato-results__item">
-          <img src="../../assets/img/case-studies/fitato/fitato-blog.png" width="500" alt="">
-          </div>
-          <div class="cs-fitato-results__item">
-          <img src="../../assets/img/case-studies/fitato/fitato-offer-landing-page.png" width="500" alt="">
-          <img src="../../assets/img/case-studies/fitato/fitato-intagram.png" width="500" alt="">
-          </div>
-          <div class="cs-fitato-results__item">
-          <img src="../../assets/img/case-studies/fitato/fitato-push-notification.png" width="500" alt="">
-          </div>
-          </div>
-          </div>
-          </section>
-        section.cs-fitato-results
-          .container
-            .cs-fitato-results__wrapper
-              img.cs-fitato-results--full(src="../../assets/img/case-studies/fitato/fitato-mockup.jpg" alt="fitato results screens")
-              img.cs-fitato-results--mobile(src="../../assets/img/case-studies/fitato/fitato-mockup-mobile.jpg" alt="fitato results screens")
-        section.cs-fitato-tools
-          .container
-            .line
-            h2 Platforms/Tools Used
-            .cs-fitato-tools__tools
-              .cs-fitato-tools__tool
-                p Content Marketing
-              .cs-fitato-tools__tool
-                p Facebook Ads
-              .cs-fitato-tools__tool
-                p Google Ads
-              .cs-fitato-tools__tool
-                p Website Optimisation
-              .cs-fitato-tools__tool
-                p Landing Pages/CRO
-              .cs-fitato-tools__tool
-                p Search Engine Optimization
-              .cs-fitato-tools__tool
-                p Mobile Marketing
-              .cs-fitato-tools__tool
-                p Email Marketing
-              .cs-fitato-tools__tool
-                p App Store Optimization
-              .cs-fitato-tools__tool
-                p Mobile Analytics
-              .cs-fitato-tools__tool
-                p Growth Model
-              .cs-fitato-tools__tool
-                p Community Building
-        //
-          <section class="cs-fitato-download">
-          <div class="container">
-          <div class="cs-fitato-download__wrapper">
-          <h2>Download the full case study</h2>
-          <span id="contact-modal-trigger" class="button">Download now</span>
-          </div>
-          </div>
-          </section>
-      section.section-talk
+    +nav('../../', 'cs')
+
+    main
+      section.cs-fitato-hero
         .container
           .line
-          h2.h3 Let's script your growth story
-          span#contact-modal-trigger.button Get in touch
-      footer
+          h1
+            a(href="https://www.fitato.fit")
+              img(src="../../assets/img/case-studies/fitato/fitato-logo-white.svg" alt="fitato logo" title="Fitato Case Study")
+          p Consulting CMO and Full Stack Growth Marketing
+      section.cs-fitato-intro
         .container
-          p
-            a(href="https://www.linkedin.com/company/ghaas-agency/" target="_blank" rel="noopener noreferrer")
-              img(src="../../assets/img/linkedin-white.svg" alt="linkedin")
-            a(href="https://twitter.com/ghaas_agency" target="_blank" rel="noopener noreferrer")
-              img(src="../../assets/img/twitter-white.svg" alt="twitter")
-            a(href="https://www.instagram.com/ghaas.xyz/" target="_blank" rel="noopener noreferrer")
-              img(src="../../assets/img/instagram-no-color.svg" alt="instagram")
-            a(href="https://www.meetup.com/Growth-Marketing-Pune/" target="_blank" rel="noopener noreferrer")
-              img(src="../../assets/img/meetup-white.svg" alt="meetup")
-          p
-            a(href="../../privacy-policy/") Privacy Policy
-          small
-            | © 
-            span.current-year
-            |  Ghaas
-    //
-      <div id="contact-modal">
-      <div class="contact-modal-content">
-      <span class="modal-close">&times;</span>
-      <h3>Download The Full Case Study</h3>
-      <p>Your PDF is ready to be sent. Just let us know where to send it.</p>
-      <div id="mc_embed_signup">
-      <form action="https://xyz.us12.list-manage.com/subscribe/post?u=2c4041c68da79c12074045904&amp;id=3841a734f8" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-      <div id="mc_embed_signup_scroll">
-      <div class="mc-field-group">
-      <label for="mce-FNAME">First Name </label>
-      <input type="text" value="" name="FNAME" class="" id="mce-FNAME" placeholder="John Doe">
-      </div>
-      <div class="mc-field-group">
-      <label for="mce-EMAIL">Email Address </label>
-      <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="john@doe.com">
-      </div>
-      <div id="mce-responses" class="clear">
-      <div class="response" id="mce-error-response" style="display:none"></div>
-      <div class="response" id="mce-success-response" style="display:none"></div>
-      </div>
-      <input type="hidden" name="STUDYID" value="fitato">
-      <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_2c4041c68da79c12074045904_3841a734f8" tabindex="-1" value=""></div>
-      <div class="clear"><input type="submit" value="Download Now" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-      </div>
-      </form>
-      </div>
-      </div>
-      </div>
-    //
-      <div class="bottom-tab-contact-form">
-      <div class="bottom-tab-contact-form__hook">
-      <p>Download the Full Case Study</p>
-      <p><img src="../../assets/img/expand_less.svg" alt="expand less icon"></p>
-      </div>
-      <div class="bottom-tab-contact-form__content">
-      <div class="bottom-tab-contact-form--close"><img src="../../assets/img/expand_more.svg" alt="expand more icon" width="40"></div>
-      <h3>Download the Full Case Study</h3>
-      <p>Your PDF is ready to be sent. Just let us know where to send it.</p>
-      <div id="mc_embed_signup">
-      <form action="https://xyz.us12.list-manage.com/subscribe/post?u=2c4041c68da79c12074045904&amp;id=3841a734f8" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-      <div id="mc_embed_signup_scroll">
-      <div class="mc-field-group">
-      <label for="mce-FNAME">First Name </label>
-      <input type="text" value="" name="FNAME" class="" id="mce-FNAME" placeholder="John Doe">
-      </div>
-      <div class="mc-field-group">
-      <label for="mce-EMAIL">Email Address </label>
-      <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="john@doe.com">
-      </div>
-      <div id="mce-responses" class="clear">
-      <div class="response" id="mce-error-response" style="display:none"></div>
-      <div class="response" id="mce-success-response" style="display:none"></div>
-      </div>
-      <input type="hidden" name="STUDYID" value="fitato">
-      <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_2c4041c68da79c12074045904_3841a734f8" tabindex="-1" value=""></div>
-      <div class="clear"><input type="submit" value="Download Now" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-      </div>
-      </form>
-      </div>
-      </div>
-      </div>
-    #contact-modal
-      .contact-modal-content
-        span.modal-close ×
-        h3 Contact Us
-        p Please enter your details and we'll get in touch soon.
-        #mc_embed_signup
-          form#mc-embedded-subscribe-form.validate(action="https://xyz.us12.list-manage.com/subscribe/post?u=2c4041c68da79c12074045904&id=fe8c495a2f" method="post" name="mc-embedded-subscribe-form" target="_blank" novalidate="")
-            #mc_embed_signup_scroll
-              .mc-field-group
-                label(for="mce-FULLNAME") Name 
-                input#mce-FULLNAME.required(type="text" value="" name="FULLNAME" placeholder="John Doe")
-              .mc-field-group
-                label(for="mce-EMAIL") Email Address 
-                input#mce-EMAIL.required.email(type="email" value="" name="EMAIL" placeholder="john@doe.com")
-              .mc-field-group
-                label(for="mce-MESSAGE") Message (with website URL) 
-                textarea#mce-MESSAGE.required(name="MESSAGE" placeholder="Enter your message")
-              #mce-responses.clear
-                #mce-error-response.response(style="display:none")
-                #mce-success-response.response(style="display:none")
-              // real people should not fill this in and expect good things - do not remove this or risk form bot signups
-              div(style="position: absolute; left: -5000px;" aria-hidden="true")
-                input(type="text" name="b_2c4041c68da79c12074045904_fe8c495a2f" tabindex="-1" value="")
-              .clear
-                input#mc-embedded-subscribe.button(type="submit" value="SUBMIT" name="subscribe")
+          .cs-fitato-intro__items
+            .cs-fitato-intro__item
+              img#fitato-app-phone-img(src="../../assets/img/case-studies/fitato/fitato-app.png" alt="fitato app")
+            #fitato-app-phone-content.cs-fitato-intro__item
+              h2 Fitato: Your Fitness Freedom
+              p
+                | Fitato is a mobile-based fitness membership solution that gives access to multiple gyms and fitness studios to its users.
+        .cs-fitato-intro--bottom-angle
+      section.cs-fitato-figures
+        .container
+          .cs-fitato-figures__items
+            .cs-fitato-figures__item
+              p 4X
+              p monthly app installs
+            .cs-fitato-figures__item
+              p 25X
+              p revenue growth
+            .cs-fitato-figures__item
+              p 15%
+              p conversion rate
+            .cs-fitato-figures__item
+              p 35%
+              p retention rate
+      section.cs-fitato-story
+        .container
+          .cs-fitato-story__left
+            .line
+            h2 The Story
+            p
+              | Fitato was started by two college friends with a dream to revolutionise the fitness industry.
+            p
+              | With $100K in seed funding, they created a technology platform that enables a user to access any gym or fitness studio across the town. They partnered with 100 gyms and fitness studios in Pune. Things were going according to plan until they went out and started selling their Fitato memberships.
+            p
+              | Fitato eventually reached out to us and engaged us for building their growth story.
+            p Period of engagement: 10 months (contd.)
+          .cs-fitato-story__right
+            img(src="../../assets/img/case-studies/fitato/fitato-discover.jpg" alt="Fitato")
+      section.cs-fitato-problem
+        .container
+          .cs-fitato-problem__content
+            .cs-fitato-problem__left
+              .line
+              h2 The Problem
+              p
+                | Fitato is a high growth startup. The challenge was to build the processes that would script the growth story. We began our engagement by running some experiments to clearly identify what the problems were.
+              .cs-fitato-problem__items
+                .cs-fitato-problem__item
+                  img(src="../../assets/img/case-studies/fitato/who.svg" alt="who icon")
+                  p
+                    span.cs-fitato-problem__item--emphasis Who
+                    br
+                    | are Fitato's audience?
+                .cs-fitato-problem__item
+                  img(src="../../assets/img/case-studies/fitato/prospects.svg" alt="where icon")
+                  p
+                    span.cs-fitato-problem__item--emphasis Where
+                    br
+                    | do you reach them?
+                .cs-fitato-problem__item
+                  img(src="../../assets/img/case-studies/fitato/how.svg" alt="how icon")
+                  p
+                    span.cs-fitato-problem__item--emphasis How
+                    br
+                    | do you explain Fitato to them?
+            .cs-fitato-problem__right
+              img(src="../../assets/img/case-studies/fitato/fitato-home.jpg" alt="fitato design")
+      section.cs-fitato-framework
+        .container
+          .line
+          h2 The Framework
+          .cs-fitato-framework__items
+            .cs-fitato-framework__item
+              img(src="../../assets/img/case-studies/fitato/prospects.svg" alt="prospects")
+              h3 Prospects
+              p
+                strong Who are we trying to attract
+              p Identify cohorts, profile, pain points, queries
+            .cs-fitato-framework__item
+              img(src="../../assets/img/case-studies/fitato/playbooks.svg" alt="playbooks")
+              h3 Playbooks
+              p
+                strong How do we attract traffic
+              p
+                | Content, Positioning, Branding, Advertising Affiliates, Build Channels, Differentiate
+            .cs-fitato-framework__item
+              img(src="../../assets/img/case-studies/fitato/platform.svg" alt="platform")
+              h3 Platform
+              p
+                strong How are we capturing prospects
+              p Pique interest, Nurture Funnels, landers, analytics, email campaigns, CRM
+            .cs-fitato-framework__item
+              img(src="../../assets/img/case-studies/fitato/product.svg" alt="product")
+              h3 Product
+              p
+                strong How do we convert users
+              p Onboarding, word of mouth, virality
+      //- section.cs-fitato-results
+      //-   .container
+      //-     .cs-fitato-results__items
+      //-       .cs-fitato-results__item
+      //-         img(src="../../assets/img/case-studies/fitato/fitato-blog.png" width="500" alt="")
+      //-       .cs-fitato-results__item
+      //-         img(src="../../assets/img/case-studies/fitato/fitato-offer-landing-page.png" width="500" alt="")
+      //-         img(src="../../assets/img/case-studies/fitato/fitato-intagram.png" width="500" alt="")
+      //-       .cs-fitato-results__item
+      //-         img(src="../../assets/img/case-studies/fitato/fitato-push-notification.png" width="500" alt="")
+      section.cs-fitato-results
+        .container
+          .cs-fitato-results__wrapper
+            img.cs-fitato-results--full(src="../../assets/img/case-studies/fitato/fitato-mockup.jpg" alt="fitato results screens")
+            img.cs-fitato-results--mobile(src="../../assets/img/case-studies/fitato/fitato-mockup-mobile.jpg" alt="fitato results screens")
+      section.cs-fitato-tools
+        .container
+          .line
+          h2 Platforms/Tools Used
+          .cs-fitato-tools__tools
+            .cs-fitato-tools__tool
+              p Content Marketing
+            .cs-fitato-tools__tool
+              p Facebook Ads
+            .cs-fitato-tools__tool
+              p Google Ads
+            .cs-fitato-tools__tool
+              p Website Optimisation
+            .cs-fitato-tools__tool
+              p Landing Pages/CRO
+            .cs-fitato-tools__tool
+              p Search Engine Optimization
+            .cs-fitato-tools__tool
+              p Mobile Marketing
+            .cs-fitato-tools__tool
+              p Email Marketing
+            .cs-fitato-tools__tool
+              p App Store Optimization
+            .cs-fitato-tools__tool
+              p Mobile Analytics
+            .cs-fitato-tools__tool
+              p Growth Model
+            .cs-fitato-tools__tool
+              p Community Building
+
+    //- section.cs-fitato-download
+    //-   .container
+    //-     .cs-fitato-download__wrapper
+    //-       h2 Download the full case study
+    //-       span#contact-modal-trigger.button Download now
+
+    +sectionTalk('Let\'s script your growth story')
+    +footer('../../')
+
+    //- #contact-modal
+    //-   .contact-modal-content
+    //-     span.modal-close ×
+    //-     h3 Download The Full Case Study
+    //-     p Your PDF is ready to be sent. Just let us know where to send it.
+    //-     #mc_embed_signup
+    //-       form#mc-embedded-subscribe-form.validate(action="https://xyz.us12.list-manage.com/subscribe/post?u=2c4041c68da79c12074045904&id=3841a734f8" method="post" name="mc-embedded-subscribe-form" target="_blank" novalidate="")
+    //-         #mc_embed_signup_scroll
+    //-           .mc-field-group
+    //-             label(for="mce-FNAME") First Name 
+    //-             input#mce-FNAME(type="text" value="" name="FNAME" placeholder="John Doe")
+    //-           .mc-field-group
+    //-             label(for="mce-EMAIL") Email Address 
+    //-             input#mce-EMAIL.required.email(type="email" value="" name="EMAIL" placeholder="john@doe.com")
+    //-           #mce-responses.clear
+    //-             #mce-error-response.response(style="display:none")
+    //-             #mce-success-response.response(style="display:none")
+    //-           input(type="hidden" name="STUDYID" value="fitato")
+    //-           div(style="position: absolute; left: -5000px;" aria-hidden="true")
+    //-             input(type="text" name="b_2c4041c68da79c12074045904_3841a734f8" tabindex="-1" value="")
+    //-           .clear
+    //-             input#mc-embedded-subscribe.button(type="submit" value="Download Now" name="subscribe")
+
+    //- .bottom-tab-contact-form
+    //-   .bottom-tab-contact-form__hook
+    //-     p Download the Full Case Study
+    //-     p
+    //-       img(src="../../assets/img/expand_less.svg" alt="expand less icon")
+    //-   .bottom-tab-contact-form__content
+    //-     .bottom-tab-contact-form--close
+    //-       img(src="../../assets/img/expand_more.svg" alt="expand more icon" width="40")
+    //-     h3 Download the Full Case Study
+    //-     p Your PDF is ready to be sent. Just let us know where to send it.
+    //-     #mc_embed_signup
+    //-       form#mc-embedded-subscribe-form.validate(action="https://xyz.us12.list-manage.com/subscribe/post?u=2c4041c68da79c12074045904&id=3841a734f8" method="post" name="mc-embedded-subscribe-form" target="_blank" novalidate="")
+    //-         #mc_embed_signup_scroll
+    //-           .mc-field-group
+    //-             label(for="mce-FNAME") First Name 
+    //-             input#mce-FNAME(type="text" value="" name="FNAME" placeholder="John Doe")
+    //-           .mc-field-group
+    //-             label(for="mce-EMAIL") Email Address 
+    //-             input#mce-EMAIL.required.email(type="email" value="" name="EMAIL" placeholder="john@doe.com")
+    //-           #mce-responses.clear
+    //-             #mce-error-response.response(style="display:none")
+    //-             #mce-success-response.response(style="display:none")
+    //-           input(type="hidden" name="STUDYID" value="fitato")
+    //-           div(style="position: absolute; left: -5000px;" aria-hidden="true")
+    //-             input(type="text" name="b_2c4041c68da79c12074045904_3841a734f8" tabindex="-1" value="")
+    //-           .clear
+    //-             input#mc-embedded-subscribe.button(type="submit" value="Download Now" name="subscribe")
+
+    +contactModal
     script(src="../../assets/js/app.js")
     //
       <script>

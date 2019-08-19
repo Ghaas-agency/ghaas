@@ -1,226 +1,101 @@
+include ../components/_index.pug
 doctype html
 html(lang="en")
   head
-    meta(charset="UTF-8")
-    meta(name="viewport" content="width=device-width, initial-scale=1.0")
-    meta(http-equiv="X-UA-Compatible" content="ie=edge")
-    title Growth & Digital Marketing For Small and Medium-sized Enterprises | Ghaas
-    meta(name="description" content="The best growth and digital marketing services for small and medium enterprises. We apply startup growth principles to your business to achieve exponential growth for your business.")
-    link(href="https://fonts.googleapis.com/css?family=Nunito:300,300i,400,400i" rel="stylesheet")
-    link(rel="stylesheet" href="../assets/css/style.css")
-    link(rel="icon" type="image/png" href="../assets/img/ghaas-icon.png")
-    meta(name="image" content="https://ghaas.xyz/assets/img/ghaas-meta.jpg")
-    // Schema.org for Google
-    meta(itemprop="name" content="Ghaas: Premier Digital & Growth Marketing Agency in India")
-    meta(itemprop="description" content="Ghaas is Growth Hacking as a Service. A growth and digital marketing agency consisting of ex-founders and growth hackers who can help you grow your business, fast.")
-    meta(itemprop="image" content="https://ghaas.xyz/assets/img/ghaas-meta.jpg")
-    // Twitter
-    meta(name="twitter:card" content="summary")
-    meta(name="twitter:title" content="Ghaas: Premier Digital & Growth Marketing Agency in India")
-    meta(name="twitter:description" content="Ghaas is Growth Hacking as a Service. A growth and digital marketing agency consisting of ex-founders and growth hackers who can help you grow your business, fast.")
-    meta(name="twitter:site" content="@ghaas_agency")
-    meta(name="twitter:image:src" content="https://ghaas.xyz/assets/img/ghaas-meta.jpg")
-    // Open Graph general (Facebook, Pinterest & Google+)
-    meta(property="og:title" content="Ghaas: Premier Digital & Growth Marketing Agency in India")
-    meta(property="og:description" content="Ghaas is Growth Hacking as a Service. A growth and digital marketing agency consisting of ex-founders and growth hackers who can help you grow your business, fast.")
-    meta(property="og:url" content="http://ghaas.xyz")
-    meta(property="og:site_name" content="Ghaas: Premier Digital & Growth Marketing Agency in India")
-    meta(property="og:type" content="website")
-    meta(property="og:image" content="https://ghaas.xyz/assets/img/ghaas-meta.jpg")
-    // Google Tag Manager
-    script.
-      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-      })(window,document,'script','dataLayer','GTM-W7FJFBF');
-    // End Google Tag Manager
+    +headMeta('Growth & Digital Marketing For Small and Medium-sized Enterprises | Ghaas',
+      'The best growth and digital marketing services for small and medium enterprises. We apply startup growth principles to your business to achieve exponential growth for your business.',
+      '../')
+    +headScripts('../')
+
   body
-    // Google Tag Manager (noscript)
-    noscript
-      iframe(src="https://www.googletagmanager.com/ns.html?id=GTM-W7FJFBF" height="0" width="0" style="display:none;visibility:hidden")
-    // End Google Tag Manager (noscript)
-    .visible
-      nav
+    +nav('../', 'sme')
+
+    main.sme
+      section.section-hero
         .container
-          .nav-left
-            a(href="../")
-              img(src="../assets/img/ghaas-logo.svg" alt="ghaas logo" title="Growth Hacking as a Service")
-          .nav-right
-            ul
-              li
-                a(href="../growth-hacking-for-startups/") FOR STARTUPS
-              li
-                a.active(href="../growth-hacking-for-sme/") FOR SMEs
-              li
-                a(href="../case-studies/") CASE STUDIES
-              li
-                a(href="https://ghaas.xyz/blog") BLOG
-              li
-                a(href="../contact/") CONTACT
-          img.menu-trigger(src="../assets/img/menu.svg" alt="menu")
-          .menu-trigger-bg
-      main.sme
-        section.section-hero
-          .container
-            .section-hero__wrapper
-              .line
-              h1 Growth & Digital Marketing For SMEs
-              p Applying startup growth principles to SMEs to achieve exponential growth.
-              span#contact-modal-trigger.button Talk to us
-        section.section-what
-          .container
+          .section-hero__wrapper
             .line
-            h2
-              | What is Growth for SME
-              span.lowercase s
-              | ?
-            p
-              | Businesses need leads, be it either a service-based business or selling products.
-            p
-              | Our mandate, as your digital marketing & growth partner is to ensure that your sales pipeline always has enough leads to work with - so you can focus on your core business.
-            p
-              | We handle your complete web presence, right from your website's design and development to ensure that it gets noticed on the internet, to optimizing lead conversions and automating your sales pipeline. With us as your growth and marketing partner, you'll always have business opportunities knocking at your door.
-        section.section-steps
-          .container
-            .section-steps__items
-              .section-steps__item
-                .section-steps__item--top
-                  img(src="../assets/img/leads-on-the-internet.svg" alt="leads on the internet")
-                .section-steps__item--bottom
-                  h3.h4 Perspective Leads on the Internet
-              .section-steps__item
-                .section-steps__item--top
-                  img(src="../assets/img/the-ghass-process.svg" alt="the ghaas process")
-                .section-steps__item--bottom
-                  h3.h4
-                    strong The Ghaas Process
-              .section-steps__item
-                .section-steps__item--top
-                  img(src="../assets/img/your-sales-funnel.svg" alt="sales funnel")
-                .section-steps__item--bottom
-                  h3.h4 Your Sales Funnel
-            span#contact-modal-trigger.button Get Ghaas for your Business
-        section.section-services
-          .container
-            .line
-            h2 Services
-            .section-services__items
-              .section-services__item
-                h3 Website Management
-                ul
-                  li Creating and optimizing the website flow.
-                  li Optimize the user flow.
-                  li A/B and multivariate testing.
-              .section-services__item
-                h3 Content Management
-                ul
-                  li Create a strong content strategy, in tune with the brand.
-                  li Create a content plan for both on-site and off-site posting.
-                  li High-value content to drive maximum engagement.
-              .section-services__item
-                h3 PPC Management
-                ul
-                  li Identify the right channels with the highest PPC ROI.
-                  li Plan and strategize Pay Per Clicks campaign execution.
-                  li Best in market PPC results with comprehensive reporting.
-            .section-services__items
-              .section-services__item
-                h3 Analytics
-                ul
-                  li Identify the business KPIs and set up tracking for the right metrics.
-                  li Ensure end-to-end tracking of every user behavior.
-                  li Retargeting high-value potential users.
-              .section-services__item
-                h3 Search Engine Optimization
-                ul
-                  li Keyword research to identify high-value terms.
-                  li White hat backlinking strategy to a high PR.
-                  li High-value content driven SEO, both on and off site.
-              .section-services__item
-                h3 Marketing Automation
-                ul
-                  li Consult and advise on the automation requirements.
-                  li Identify the right platforms and ensure they all work in tandem.
-                  li Multi-flow automation based on triggers and user behavior.
-      section.section-talk
+            h1 Growth & Digital Marketing For SMEs
+            p Applying startup growth principles to SMEs to achieve exponential growth.
+            span#contact-modal-trigger.button Talk to us
+      section.section-what
         .container
           .line
-          h2.h3
-            | Rapid experimentation to find, optimize and capitalise on high impact channels is the core of what we do.
-          span#contact-modal-trigger.button Get in touch
-      footer
+          h2
+            | What is Growth for SME
+            span.lowercase s
+            | ?
+          p
+            | Businesses need leads, be it either a service-based business or selling products.
+          p
+            | Our mandate, as your digital marketing & growth partner is to ensure that your sales pipeline always has enough leads to work with - so you can focus on your core business.
+          p
+            | We handle your complete web presence, right from your website's design and development to ensure that it gets noticed on the internet, to optimizing lead conversions and automating your sales pipeline. With us as your growth and marketing partner, you'll always have business opportunities knocking at your door.
+      section.section-steps
         .container
-          p
-            a(href="https://www.linkedin.com/company/ghaas-agency/" target="_blank" rel="noopener noreferrer")
-              img(src="../assets/img/linkedin-white.svg" alt="linkedin")
-            a(href="https://twitter.com/ghaas_agency" target="_blank" rel="noopener noreferrer")
-              img(src="../assets/img/twitter-white.svg" alt="twitter")
-            a(href="https://www.instagram.com/ghaas.xyz/" target="_blank" rel="noopener noreferrer")
-              img(src="../assets/img/instagram-no-color.svg" alt="instagram")
-            a(href="https://www.meetup.com/Growth-Marketing-Pune/" target="_blank" rel="noopener noreferrer")
-              img(src="../assets/img/meetup-white.svg" alt="meetup")
-          p
-            a(href="../privacy-policy/") Privacy Policy
-          small
-            | © 
-            span.current-year
-            |  Ghaas
-    #contact-modal
-      .contact-modal-content
-        span.modal-close ×
-        h3 Contact Us
-        p Please enter your details and we'll get in touch soon.
-        #mc_embed_signup
-          form#mc-embedded-subscribe-form.validate(action="https://xyz.us12.list-manage.com/subscribe/post?u=2c4041c68da79c12074045904&id=fe8c495a2f" method="post" name="mc-embedded-subscribe-form" target="_blank" novalidate="")
-            #mc_embed_signup_scroll
-              .mc-field-group
-                label(for="mce-FULLNAME") Name 
-                input#mce-FULLNAME.required(type="text" value="" name="FULLNAME" placeholder="John Doe")
-              .mc-field-group
-                label(for="mce-EMAIL") Email Address 
-                input#mce-EMAIL.required.email(type="email" value="" name="EMAIL" placeholder="john@doe.com")
-              .mc-field-group
-                label(for="mce-MESSAGE") Message (with website URL) 
-                textarea#mce-MESSAGE.required(name="MESSAGE" placeholder="Enter your message")
-              #mce-responses.clear
-                #mce-error-response.response(style="display:none")
-                #mce-success-response.response(style="display:none")
-              // real people should not fill this in and expect good things - do not remove this or risk form bot signups
-              div(style="position: absolute; left: -5000px;" aria-hidden="true")
-                input(type="text" name="b_2c4041c68da79c12074045904_fe8c495a2f" tabindex="-1" value="")
-              .clear
-                input#mc-embedded-subscribe.button(type="submit" value="SUBMIT" name="subscribe")
-    .bottom-tab-contact-form
-      .bottom-tab-contact-form__hook
-        p Free 30 Min Consultation
-        p
-          img(src="../assets/img/expand_less.svg" alt="expand less icon")
-      .bottom-tab-contact-form__content
-        .bottom-tab-contact-form--close
-          img(src="../assets/img/expand_more.svg" alt="expand more icon" width="40")
-        h3 Free 30 Min Consultation
-        p
-          | Get your website reviewed by our experts. Get actionable tactics to improve your rankings, traffic and conversion rates.
-        p
-          strong No obligation!
-        #mc_embed_signup
-          form#mc-embedded-subscribe-form.validate(action="https://xyz.us12.list-manage.com/subscribe/post?u=2c4041c68da79c12074045904&id=fe8c495a2f" method="post" name="mc-embedded-subscribe-form" target="_blank" novalidate="")
-            #mc_embed_signup_scroll
-              .mc-field-group
-                label(for="mce-FULLNAME") Name 
-                input#mce-FULLNAME.required(type="text" value="" name="FULLNAME" placeholder="John Doe")
-              .mc-field-group
-                label(for="mce-EMAIL") Email Address 
-                input#mce-EMAIL.required.email(type="email" value="" name="EMAIL" placeholder="john@doe.com")
-              .mc-field-group
-                label(for="mce-MESSAGE") Message (with website URL) 
-                textarea#mce-MESSAGE.required(name="MESSAGE" placeholder="Enter your message")
-              #mce-responses.clear
-                #mce-error-response.response(style="display:none")
-                #mce-success-response.response(style="display:none")
-              div(style="position: absolute; left: -5000px;" aria-hidden="true")
-                input(type="text" name="b_2c4041c68da79c12074045904_fe8c495a2f" tabindex="-1" value="")
-              .clear
-                input#mc-embedded-subscribe.button(type="submit" value="SUBMIT" name="subscribe")
+          .section-steps__items
+            .section-steps__item
+              .section-steps__item--top
+                img(src="../assets/img/leads-on-the-internet.svg" alt="leads on the internet")
+              .section-steps__item--bottom
+                h3.h4 Perspective Leads on the Internet
+            .section-steps__item
+              .section-steps__item--top
+                img(src="../assets/img/the-ghass-process.svg" alt="the ghaas process")
+              .section-steps__item--bottom
+                h3.h4
+                  strong The Ghaas Process
+            .section-steps__item
+              .section-steps__item--top
+                img(src="../assets/img/your-sales-funnel.svg" alt="sales funnel")
+              .section-steps__item--bottom
+                h3.h4 Your Sales Funnel
+          span#contact-modal-trigger.button Get Ghaas for your Business
+      section.section-services
+        .container
+          .line
+          h2 Services
+          .section-services__items
+            .section-services__item
+              h3 Website Management
+              ul
+                li Creating and optimizing the website flow.
+                li Optimize the user flow.
+                li A/B and multivariate testing.
+            .section-services__item
+              h3 Content Management
+              ul
+                li Create a strong content strategy, in tune with the brand.
+                li Create a content plan for both on-site and off-site posting.
+                li High-value content to drive maximum engagement.
+            .section-services__item
+              h3 PPC Management
+              ul
+                li Identify the right channels with the highest PPC ROI.
+                li Plan and strategize Pay Per Clicks campaign execution.
+                li Best in market PPC results with comprehensive reporting.
+          .section-services__items
+            .section-services__item
+              h3 Analytics
+              ul
+                li Identify the business KPIs and set up tracking for the right metrics.
+                li Ensure end-to-end tracking of every user behavior.
+                li Retargeting high-value potential users.
+            .section-services__item
+              h3 Search Engine Optimization
+              ul
+                li Keyword research to identify high-value terms.
+                li White hat backlinking strategy to a high PR.
+                li High-value content driven SEO, both on and off site.
+            .section-services__item
+              h3 Marketing Automation
+              ul
+                li Consult and advise on the automation requirements.
+                li Identify the right platforms and ensure they all work in tandem.
+                li Multi-flow automation based on triggers and user behavior.
+
+    +sectionTalk('Rapid experimentation to find, optimize and capitalise on high impact channels is the core of what we do.')
+    +footer('../')
+    +contactModal
+    +contactTab
     script(src="../assets/js/app.js")

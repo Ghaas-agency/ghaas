@@ -1,0 +1,18 @@
+mixin footer(pathPrefix)
+  footer
+    .container
+      p
+        a(href="https://www.linkedin.com/company/ghaas-agency/" target="_blank" rel="noopener noreferrer")
+          img(src=`${pathPrefix}assets/img/linkedin-white.svg` alt="linkedin")
+        a(href="https://twitter.com/ghaas_agency" target="_blank" rel="noopener noreferrer")
+          img(src=`${pathPrefix}assets/img/twitter-white.svg` alt="twitter")
+        a(href="https://www.instagram.com/ghaas.xyz/" target="_blank" rel="noopener noreferrer")
+          img(src=`${pathPrefix}assets/img/instagram-no-color.svg` alt="instagram")
+        a(href="https://www.meetup.com/Growth-Marketing-Pune/" target="_blank" rel="noopener noreferrer")
+          img(src=`${pathPrefix}assets/img/meetup-white.svg` alt="meetup")
+      p
+        a(href=`${pathPrefix}privacy-policy/`) Privacy Policy
+      small
+        | © 
+        span.current-year
+        |  Ghaas

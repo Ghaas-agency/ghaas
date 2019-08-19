@@ -1,0 +1,25 @@
+mixin contactModal
+  #contact-modal
+    .contact-modal-content
+      span.modal-close ×
+      h3 Contact Us
+      p Please enter your details and we'll get in touch soon.
+      #mc_embed_signup
+        form#mc-embedded-subscribe-form.validate(action="https://xyz.us12.list-manage.com/subscribe/post?u=2c4041c68da79c12074045904&id=fe8c495a2f" method="post" name="mc-embedded-subscribe-form" target="_blank" novalidate="")
+          #mc_embed_signup_scroll
+            .mc-field-group
+              label(for="mce-FULLNAME") Name 
+              input#mce-FULLNAME.required(type="text" value="" name="FULLNAME" placeholder="John Doe")
+            .mc-field-group
+              label(for="mce-EMAIL") Email Address 
+              input#mce-EMAIL.required.email(type="email" value="" name="EMAIL" placeholder="john@doe.com")
+            .mc-field-group
+              label(for="mce-MESSAGE") Message (with website URL) 
+              textarea#mce-MESSAGE.required(name="MESSAGE" placeholder="Enter your message")
+            #mce-responses.clear
+              #mce-error-response.response(style="display:none")
+              #mce-success-response.response(style="display:none")
+            div(style="position: absolute; left: -5000px;" aria-hidden="true")
+              input(type="text" name="b_2c4041c68da79c12074045904_fe8c495a2f" tabindex="-1" value="")
+            .clear
+              input#mc-embedded-subscribe.button(type="submit" value="SUBMIT" name="subscribe")

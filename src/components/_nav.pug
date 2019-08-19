@@ -1,0 +1,25 @@
+mixin nav(pathPrefix, activePage)
+  noscript
+    iframe(src="https://www.googletagmanager.com/ns.html?id=GTM-W7FJFBF" height="0" width="0" style="display:none;visibility:hidden")
+
+  nav
+    .container
+      .nav-left
+        a(href=pathPrefix)
+          img(src=`${pathPrefix}assets/img/ghaas-logo.svg` alt="ghaas logo" title="Growth Hacking as a Service")
+      .nav-right
+        ul
+          li
+            a(href=`${pathPrefix}growth-hacking-for-startups/`, class=`${activePage === 'startups' ? 'active' : ''}`) FOR STARTUPS
+          li
+            a(href=`${pathPrefix}growth-hacking-for-sme/`, class=`${activePage === 'sme' ? 'active' : ''}`) FOR SMEs
+          li
+            a(href=`${pathPrefix}work/`, class=`${activePage === 'work' ? 'active' : ''}`) WORK
+          li
+            a(href=`${pathPrefix}case-studies/`, class=`${activePage === 'cs' ? 'active' : ''}`) CASE STUDIES
+          li
+            a(href="https://ghaas.xyz/blog") BLOG
+          li
+            a(href=`${pathPrefix}contact/`, class=`${activePage === 'contact' ? 'active' : ''}`) CONTACT
+      img.menu-trigger(src=`${pathPrefix}assets/img/menu.svg` alt="menu")
+      .menu-trigger-bg

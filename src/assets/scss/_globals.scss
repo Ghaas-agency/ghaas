@@ -7,7 +7,7 @@ html, body {
 body {
   font-size: 1em;
   line-height: 1.375em;
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Lato', sans-serif;
   font-weight: normal;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -15,7 +15,10 @@ body {
   color: $grey-color-dark;
   max-width: 1600px;
   margin: 0 auto;
-  background-color: $primary-color;
+}
+
+main {
+  padding-top: 67px;
 }
 
 p {
@@ -32,8 +35,9 @@ p {
 h1, h2, h3, h4,
 .h1, .h2, .h3, .h3 {
   text-transform: uppercase;
-  font-weight: 300;
+  font-weight: bold;
   letter-spacing: 2px;
+  font-family: 'Playfair Display', serif;
 }
 
 h1, .h1 {
@@ -87,8 +91,9 @@ h3, .h3 {
 h4, .h4 {
   font-size: 1.125em;
   line-height: 1.22em;
-  font-weight: 400;
+  font-weight: 500;
   color: $primary-color;
+  font-family: 'Poppins', sans-serif;
 
   @media (max-width: 979px) {
     font-size: 1.125em;

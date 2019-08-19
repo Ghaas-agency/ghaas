@@ -16,7 +16,6 @@ if(typeof SmoothScroll !== 'undefined') {
 
 /* Contact Modal */
 var modal = document.getElementById('contact-modal');
-var visible = document.getElementsByClassName('visible')[0];
 
 window.onclick = function(e) {
   /* Navigation menu toggle. */
@@ -31,13 +30,13 @@ window.onclick = function(e) {
   /* Contact modal open. */
   if(e.target.id === 'contact-modal-trigger') {
     modal.style.display = 'block';
-    visible.classList.add('blur');
+    document.body.style.overflow = 'hidden';
   }
-
+  
   /* Contact modal close. */
   if(e.target.className === 'modal-close' || e.target.id === 'contact-modal') {
     modal.style.display = 'none';
-    visible.classList.remove('blur');
+    document.body.style.overflow = 'auto';
   }
 
   /* Bottom tab contact form */

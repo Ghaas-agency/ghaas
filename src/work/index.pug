@@ -1,11 +1,20 @@
 include ../components/_index.pug
-
-<!DOCTYPE html>
+doctype html
 html(lang="en")
   head
-    meta(charset="UTF-8")
-    meta(name="viewport", content="width=device-width, initial-scale=1.0")
-    meta(http-equiv="X-UA-Compatible", content="ie=edge")
-    title Work | Ghaas
+    +headMeta('Work | Ghaas',
+      'Ghaas is Growth Hacking as a Service. A growth and digital marketing agency consisting of ex-founders and growth hackers who can help you grow your business, fast.',
+      '../')
+    +headScripts('../')
   body
-    main
+    +nav('../', 'work')
+
+    main.work
+      section.work-hero
+        .container
+          h1 Work
+
+    +footer('../')
+    +contactModal
+    +contactTab
+    script(src="../assets/js/app.js")
