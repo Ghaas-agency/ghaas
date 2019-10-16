@@ -12,9 +12,183 @@ html(lang="en")
     main.work
       section.work-hero
         .container
-          h1 Work
+          .line
+          h1.center Work
+      section.work-work
+        .container
+          .row
+            button.flex-1.work-work__item(type="button", onclick="openWorkModal(event, 1);", style="background-image: url('../assets/img/work/fitato-march-month-end.jpg')")
+              .work-work__hover
+                h3 Digital Campaign
+                h4 Fitato
+            .flex-1.work-work__item
+              button.button-unstyled.work-carousel--previous(type="button")
+                img(src="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.6/collection/build/ionicons/svg/ios-arrow-forward.svg", alt="arrow forward")
+              button.button-unstyled.work-carousel--next(type="button")
+                img(src="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.6/collection/build/ionicons/svg/ios-arrow-forward.svg", alt="arrow forward")
+              .work-carousel
+                .work-carousel__item
+                  img(src="../assets/img/work/02-shibika-social-media-art-form.jpg", alt="shibika social media art form")
+                .work-carousel__item
+                  img(src="../assets/img/work/02-shibika-social-media-chistina-rossetti.jpg", alt="shibika social media chistina rossetti")
+                .work-carousel__item
+                  img(src="../assets/img/work/02-shibika-social-media-michelangelo.jpg", alt="shibika social media michelangelo")
+                .work-carousel__item
+                  img(src="../assets/img/work/02-shibika-social-media-ossie-davis.jpg", alt="shibika social media ossie davis")
+                .work-carousel__item
+                  img(src="../assets/img/work/02-shibika-social-media-pablo-picasso.jpg", alt="shibika social media pablo picasso")
+                .work-carousel__item
+                  img(src="../assets/img/work/02-shibika-social-media-vincent-van-gogh.jpg", alt="shibika social media vincent van gogh")
+              .work-work__hover
+                h3 Social Media Management
+                h4 Shibika
+          .row
+            a.flex-1.work-work__item(href="https://blog.fitato.fit", target="_blank", rel="noopener noreferrer", style="background-image: url('../assets/img/work/fitato-blog.jpg')")
+              .work-work__hover
+                h3 Blog Management
+                h4 Fitato
+            button.flex-2.work-work__item(type="button", onclick="openWorkModal(event, 4);", style="background-image: url('../assets/img/work/workship.png')")
+              .work-work__hover
+                h3 Branding
+                h4 Workship
+          .row
+            .flex-1.work-work__item(style="background-image: url('../assets/img/work/fitato-video.jpg')")
+              .work-work__hover
+                h3 Video Creation
+                h4 Fitato
+          .row
+            .flex-2.work-work__item(style="background-image: url('../assets/img/work/trusting-social.jpg')")
+              .work-work__hover
+                h3 Event Branding
+                h4 Trusting Social Engineering
+            .flex-1.work-work__item(style="background-image: url('../assets/img/work/email-optin-rate.png')")
+              .work-work__hover
+                h3 Email Marketing
+                h4 Fitato
+          .row.vertical-row
+            .flex-1
+              .work-work__item(style="background-image: url('../assets/img/work/fitato-event.jpg')")
+                .work-work__hover
+                  h3 Event Marketing
+                  h4 Fitato
+              button.work-work__item(type="button", onclick="openWorkModal(event, 10);", style="background-image: url('../assets/img/work/fitato-website.jpg')")
+                .work-work__hover
+                  h3 UI Design
+                  h4 Fitato
+            .flex-1
+              .work-work__item(style="background-image: url('../assets/img/work/car-ad.jpg'); height: 900px;")
+                .work-work__hover
+                  h3 Print Advertising
+                  h4 T_Steps
+              .work-work__item(style="background-image: url('../assets/img/work/analytics-growth.png'); background-size: 100%; height: 300px; margin-top: 10px;")
+                .work-work__hover
+                  h3 SEO Optimisation
+                  h4 Workship Website and Blog
+          .row
+            .flex-2.work-work__item(style="background-image: url('../assets/img/work/dsconf-merch.jpg')")
+              .work-work__hover
+                h3 Event Management And Marketing
+                h4 DSConf 2019
+            a.flex-1.work-work__item(href="https://angel.co", target="_blank", rel="noopener noreferrer", style="background-image: url('../assets/img/work/join-ghaas.png')")
+              .work-work__hover.join
+                h3 Join the team
+                h4
+                  span.button Join
+
+    .work-modal
+      .work-modal__content
+        button.button-unstyled.work-modal--close(type="button", onclick="closeWorkModal();")
+          img(src="../assets/img/close.svg", alt="close")
+        .content-1
+          h2 Digital Campaign
+          h4 Fitato
+          h4.fitato-red March Month-End Madness
+          h4.yellow Campaign Goal:
+          p A direct sales campaign to generate leads and get conversions for the client.
+          h4.yellow Target Audience:
+          p Age-Group - 20-30
+            br
+            | Fitness inclined young adults
+          h4.yellow Sales Offer:
+          p 25% Flat Discount
+          h4.fitato-red Collaterals Created
+          h4.yellow Landing Page
+          img.extended-img(src="../assets/img/work/01-fitato-website.jpg", alt="fitato website")
+          .row(style="margin-top: 50px;")
+            .flex-1
+              .floating-img.floating-img-left
+                h4.yellow Push Notification
+                img(src="../assets/img/work/01-fitato-offer-push-notification.jpg", alt="fitato offer push notification")
+              .floating-img.floating-img-left
+                h4.yellow Story
+                img(src="../assets/img/work/01-fitato-offer-story.jpg", alt="fitato offer story")
+              .floating-img.floating-img-left
+                h4.yellow In-App Notification
+                img(src="../assets/img/work/01-fitato-offer-in-app-notification.jpg", alt="fitato offer in-app notification")
+            .flex-1
+              .floating-img.floating-img-right
+                h4.yellow Mailer
+                img(src="../assets/img/work/01-fitato-offer-mailer.jpg", alt="fitato offer mailer")
+              .floating-img.floating-img-right
+                h4.yellow Facebook Story
+                img(src="../assets/img/work/01-fitato-offer-facebook-story.jpg", alt="fitato offer facebook story")
+              h4.fitato-red Target Achieved
+              p Conversation rate: 50% of the leads for the month. 
+                br
+                | Revenue targets crossed.
+
+        .content-4
+          h2 Branding
+          h4(style="margin-bottom: 50px;") Workship
+          h4.yellow About Workship
+          p Workship is a recruitment platform that connects job prospects to companies and job opportunities that match their profile and expectations. It is a technologically assisted platform that allows candidate screening for technical jobs to adequately match them to jobs they deserve.
+          h4.yellow Logo
+          p The logo is a minimalist approach on the word: Workship. The play is on the last two letters where the serif of "i" and "p" are connected symbolising the bond of friendship that Workship stands for. The letter P also plays the role of a job seeker where the curve of "P" is the backpack full of talent that the job seeker brings in for the company. So the logo in total works for the companies that tie up with Workship as well as the job seekers who use Workship as a portal.
+          .row
+            .flex-1
+              h4.yellow Colour Palette
+              .workship-colors.row.center
+                .flex-1(style="background-color: #FFCA00;")
+                  span(style="color: #202020;") #FFCA00
+                .flex-1(style="background-color: #7A2DDB;")
+                  span #7A2DDB
+                .flex-1(style="background-color: #1D1D1D;")
+                  span #1D1D1D
+                .flex-1(style="background-color: #000000;")
+                  span #000000
+            .flex-1
+              h4.yellow Typography
+              p(style="margin-top: 25px") Primary - Libre Baskerville
+              p Secondary - InterUI
+          h4.yellow Website Design
+          h4.yellow Stationary
+
+        .content-10
+          h2 UI Design
+          h4(style="margin-bottom: 50px;") Fitato
+          h4.fitato-red About Fitato
+          p Fitato is a fitness brand that allows customers to access multiple fitness facilities with a single pass and enjoy fitness activities that are unconventional and fun-filled. Its product is the Fitato Membership or the Fitato Pass and USP is the Fitato Exclusive Events.
+          h4.fitato-red Website UI
 
     +footer('../')
     +contactModal
-    +contactTab
+    +contactTab('../')
     script(src="../assets/js/app.js")
+    script.
+      var workModal = document.getElementsByClassName('work-modal')[0];
+
+      function openWorkModal(event, index) {
+        workModal.className = 'work-modal open open-' + index;
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeWorkModal() {
+        workModal.className = 'work-modal';
+        document.body.style.overflow = 'auto';
+      }
+
+      window.onclick = function(e) {
+        if (e.target.classList.contains('work-modal')) {
+          closeWorkModal();
+        }
+      }

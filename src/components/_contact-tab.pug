@@ -1,12 +1,12 @@
-mixin contactTab
+mixin contactTab(pathPrefix)
   .bottom-tab-contact-form
     .bottom-tab-contact-form__hook
       p Free 30 Min Consultation
       p
-        img(src="assets/img/expand_less.svg" alt="expand less icon")
+        img(src=`${pathPrefix}assets/img/expand_less.svg` alt="expand less icon")
     .bottom-tab-contact-form__content
       .bottom-tab-contact-form--close
-        img(src="assets/img/expand_more.svg" alt="expand more icon" width="40")
+        img(src=`${pathPrefix}assets/img/expand_more.svg` alt="expand more icon" width="40")
       h3 Free 30 Min Consultation
       p
         | Get your website reviewed by our experts. Get actionable tactics to improve your rankings, traffic and conversion rates.

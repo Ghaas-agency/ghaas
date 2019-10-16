@@ -86,3 +86,64 @@ window.onclick = function(e) {
     bottomTabForm.className = 'bottom-tab-contact-form bottom-tab-contact-form__closed';
   }
 }
+
+/* Carousel */
+
+function Carousel(targetElement) {
+  this.targetElement = targetElement;
+  this.childrenElements = targetElement.children;
+  this.state = 0;
+  this.length = targetElement.children.length;
+};
+
+Carousel.prototype.move = function() {
+  for (var i = 0; i < this.length; i++) {
+    this.childrenElements[i].style.transform = 'translateX(' + (this.state * -100) +  '%)';
+  }
+}
+
+Carousel.prototype.next = function() {
+  if (this.state < this.length - 1) {
+    this.state += 1;
+  } else {
+    this.state = 0;
+  }
+  this.move();
+}
+
+Carousel.prototype.previous = function() {
+  if (this.state > 0) {
+    this.state -= 1;
+  } else {
+    this.state = this.length - 1;
+  }
+  this.move();
+}
+
+var workCarousels = document.getElementsByClassName('work-carousel');
+var carousels = [];
+
+for (var i = 0; i < workCarousels.length; i++) {
+  carousels.push(new Carousel(workCarousels[i]));
+  carousels[i].targetElement.parentElement.getElementsByClassName('work-carousel--previous')[0].onclick = function() {
+    findAndCallCarouselAction(this, 'previous');
+  } 
+  carousels[i].targetElement.parentElement.getElementsByClassName('work-carousel--next')[0].onclick = function() {
+    findAndCallCarouselAction(this, 'next');
+  }
+}
+
+function findAndCallCarouselAction(self, action) {
+  var target = self.parentElement.getElementsByClassName('work-carousel')[0];
+
+  for (var i = 0; i < carousels.length; i++) {
+    if (target === carousels[i].targetElement) {
+      if (action === 'previous') {
+        carousels[i].previous();
+      }
+      if (action === 'next') {
+        carousels[i].next();
+      }
+    }
+  }
+}

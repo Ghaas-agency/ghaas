@@ -8,7 +8,8 @@
   clear: both;
 }
 
-.button, input[type="submit"] {
+.button,
+input[type="submit"] {
   padding: 10px 15px;
   display: inline-block;
   background-color: $primary-color;
@@ -26,7 +27,8 @@
   transition: all 0.3s ease-in-out;
 }
 
-.button:hover, .button:focus {
+.button:hover,
+.button:focus {
   background-color: lighten($primary-color, 5%);
   box-shadow: $secondary-shadow;
   transform: translateY(-3px);
@@ -37,16 +39,32 @@ input[type="submit"] {
   box-shadow: none;
   outline: none;
   border: none;
+
+  &:hover,
+  &:focus {
+    background-color: lighten($primary-color, 5%);
+  }
 }
 
-input[type="submit"]:hover, input[type="submit"]:focus {
-  background-color: lighten($primary-color, 5%);
+.button-unstyled {
+  display: inline-block;
+  background: unset;
+  background-color: unset;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+
+  &:focus {
+    outline: 0;
+  }
 }
 
 a.button {
   text-decoration: none;
 
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     color: $grey-color-light;
   }
 }
@@ -70,8 +88,52 @@ a.button {
   font-weight: 300;
 }
 
+.center {
+  text-align: center;
+}
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
 .visible {
   background-color: $grey-color-light;
+}
+
+.row {
+  display: flex;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.flex-2 {
+  flex: 2;
+}
+
+.yellow {
+  color: $secondary-color-yellow !important;
+}
+
+.fitato-red {
+  color: $fitato-red !important;
+}
+
+.row {
+  display: flex;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.flex-1 {
+  flex: 1;
 }
 
 .section-talk {
@@ -80,7 +142,7 @@ a.button {
   background-color: $grey-color-dark;
   color: $grey-color-light;
 
-  @media (max-width: 767px) {
+  @media only screen and (max-width: 767px) {
     padding: 100px 5%;
   }
 }
