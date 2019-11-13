@@ -97,19 +97,19 @@ nav {
         a.active {
           color: $primary-color;
           position: relative;
-        }
 
-        a.active::after {
-          content: "";
-          position: absolute;
-          bottom: -22px;
-          height: 2px;
-          background-color: $primary-color;
-          width: 100%;
-          left: 0;
-
-          @media only screen and (max-width: 979px) {
+          &::after {
+            content: "";
+            position: absolute;
             bottom: -23px;
+            height: 2px;
+            background-color: $primary-color;
+            width: 100%;
+            left: 0;
+  
+            @media only screen and (max-width: 979px) {
+              bottom: -23px;
+            }
           }
         }
       }

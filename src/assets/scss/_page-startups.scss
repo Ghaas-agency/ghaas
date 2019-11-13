@@ -4,12 +4,12 @@
     background-color: #ffffff;
     color: $grey-color-dark;
     padding-bottom: 100px;
-    background-image: url("../img/startups-hero.svg");
-    background-position: bottom;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    background-image: url("../img/growth-hacking-startups.jpg");
+    background-position: calc(50% - 350px) center;
+    -webkit-background-size: 600px;
+    -moz-background-size: 600px;
+    -o-background-size: 600px;
+    background-size: 600px;
     background-repeat: no-repeat;
 
     &__wrapper {
@@ -31,19 +31,48 @@
     }
 
     @media (max-width: 1200px) {
-      -webkit-background-size: 120% 120%;
-      -moz-background-size: 120%;
-      -o-background-size: 120%;
-      background-size: 120%;
-      background-position: 30% bottom;
+      -webkit-background-size: 550px 550px;
+      -moz-background-size: 550px;
+      -o-background-size: 550px;
+      background-size: 550px;
+      background-position: calc(50% - 300px) center;
       min-height: 30vh;
     }
 
-    @media (max-width: 480px) {
-      background-position: -190% bottom;
+    @media only screen and (max-width: 979px) {
+      -webkit-background-size: 450px 450px;
+      -moz-background-size: 450px;
+      -o-background-size: 450px;
+      background-size: 450px;
+      background-position: calc(50% - 250px) center;
+    }
+
+    @media only screen and (max-width: 767px) {
+      -webkit-background-size: 450px 450px;
+      -moz-background-size: 450px;
+      -o-background-size: 450px;
+      background-size: 450px;
+      background-position: right bottom;
+      min-height: 500px;
+
+      .container {
+        padding-top: 50px;
+      }
 
       &__wrapper {
         width: 100%;
+      }
+    }
+
+    @media (max-width: 480px) {
+      background-position: center bottom;
+      -webkit-background-size: contain contain;
+      -moz-background-size: contain;
+      -o-background-size: contain;
+      background-size: contain;
+
+      .container {
+        padding-bottom: 100px;
       }
     }
   }

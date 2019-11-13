@@ -3,20 +3,48 @@
     min-height: 90vh;
     color: $grey-color-dark;
     padding-bottom: 100px;
-    background-position: bottom;
+    background-position: calc(50% + 300px) 75px;
     background-repeat: no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    -webkit-background-size: 800px;
+    -moz-background-size: 800px;
+    -o-background-size: 800px;
+    background-size: 800px;
     background-color: #ffffff;
-    background-image: url("../img/index-hero.svg");
+    background-image: url("../img/supercharge-growth.jpg");
+
+    @media (max-width: 1200px) {
+      background-size: 50%;
+      padding-bottom: 75px;
+      min-height: 600px;
+    }
+
+    @media (max-width: 979px) {
+      background-position: calc(50% + 200px) 150px;
+      background-size: 450px;
+    }
+
+    @media only screen and (max-width: 767px) {
+      background-position: right calc(100% - 100px);
+      padding-bottom: 150px;
+    }
+
+    @media (max-width: 480px) {
+      background-position: center calc(100% - 100px);
+      -webkit-background-size: contain contain;
+      -moz-background-size: contain;
+      -o-background-size: contain;
+      background-size: contain;
+    }
 
     &__wrapper {
       width: 50%;
 
       .line {
         margin: 0 auto 2.5em 0;
+      }
+
+      @media only screen and (max-width: 767px) {
+        width: 100%;
       }
     }
 
@@ -33,50 +61,14 @@
 
     .container {
       padding-top: 200px;
-    }
 
-    @media (max-width: 1200px) {
-      background-position-y: bottom;
-      background-position-x: 100%;
-
-      &__wrapper {
-        width: 75%;
+      @media only screen and (max-width: 1200px) {
+        padding-top: 100px;
       }
-    }
 
-    @media (max-width: 979px) {
-      -webkit-background-size: 200% 200%;
-      -moz-background-size: 200%;
-      -o-background-size: 200%;
-      background-size: 200%;
-      background-position-y: bottom;
-      background-position-x: 100%;
-    }
-
-    @media (max-width: 767px) {
-      .container {
-        padding-top: 130px;
+      @media only screen and (max-width: 767px) {
+        padding-top: 50px;
       }
-    }
-
-    @media (max-width: 480px) {
-      background-position-y: bottom;
-      background-position-x: 100%;
-      -webkit-background-size: 200% 200%;
-      -moz-background-size: 200%;
-      -o-background-size: 200%;
-      background-size: 200%;
-
-      &__wrapper {
-        width: 100%;
-      }
-    }
-
-    @media (max-width: 380px) {
-      -webkit-background-size: 170% 170%;
-      -moz-background-size: 170%;
-      -o-background-size: 170%;
-      background-size: 170%;
     }
   }
 

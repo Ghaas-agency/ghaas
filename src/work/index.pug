@@ -52,7 +52,7 @@ html(lang="en")
                 h3 Branding
                 h4 Workship
           .row
-            .flex-1.work-work__item(style="background-image: url('../assets/img/work/fitato-video.jpg')")
+            button.flex-1.work-work__item(type="button", onclick="openWorkModal(event, 5);", style="background-image: url('../assets/img/work/fitato-video.jpg')")
               .work-work__hover
                 h3 Video Creation
                 h4 Fitato
@@ -67,7 +67,7 @@ html(lang="en")
                 h4 Fitato
           .row.vertical-row
             .flex-1
-              .work-work__item(style="background-image: url('../assets/img/work/fitato-event.jpg')")
+              button.work-work__item(type="button", onclick="openWorkModal(event, 8);", style="background-image: url('../assets/img/work/fitato-event.jpg')")
                 .work-work__hover
                   h3 Event Marketing
                   h4 Fitato
@@ -76,20 +76,52 @@ html(lang="en")
                   h3 UI Design
                   h4 Fitato
             .flex-1
-              .work-work__item(style="background-image: url('../assets/img/work/car-ad.jpg'); height: 900px;")
+              .work-work__item(style="height: 900px;")
+                button.button-unstyled.work-carousel--previous(type="button")
+                  img(src="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.6/collection/build/ionicons/svg/ios-arrow-forward.svg", alt="arrow forward")
+                button.button-unstyled.work-carousel--next(type="button")
+                  img(src="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.6/collection/build/ionicons/svg/ios-arrow-forward.svg", alt="arrow forward")
+                .work-carousel
+                  .work-carousel__item
+                    img(src="../assets/img/work/09-tsteps-car-ad.jpg", alt="tsteps car ad")
+                  .work-carousel__item
+                    img(src="../assets/img/work/09-tsteps-perfect-fit-ad.jpg", alt="tsteps perfect fit ad")
                 .work-work__hover
                   h3 Print Advertising
-                  h4 T_Steps
+                  h4 TSteps
               .work-work__item(style="background-image: url('../assets/img/work/analytics-growth.png'); background-size: 100%; height: 300px; margin-top: 10px;")
                 .work-work__hover
                   h3 SEO Optimisation
                   h4 Workship Website and Blog
           .row
-            .flex-2.work-work__item(style="background-image: url('../assets/img/work/dsconf-merch.jpg')")
+            .flex-2.work-work__item
+              button.button-unstyled.work-carousel--previous(type="button")
+                img(src="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.6/collection/build/ionicons/svg/ios-arrow-forward.svg", alt="arrow forward")
+              button.button-unstyled.work-carousel--next(type="button")
+                img(src="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.6/collection/build/ionicons/svg/ios-arrow-forward.svg", alt="arrow forward")
+              .work-carousel
+                .work-carousel__item
+                  img(src="../assets/img/work/12-dsconf-landing-page.jpg", alt="dsconf landing page")
+                .work-carousel__item
+                  img(src="../assets/img/work/12-dsconf-bag.jpg", alt="dsconf bag")
+                .work-carousel__item
+                  img(src="../assets/img/work/12-dsconf-diary.jpg", alt="dsconf diary")
+                .work-carousel__item
+                  img(src="../assets/img/work/12-dsconf-id-card.jpg", alt="dsconf id card")
+                .work-carousel__item
+                  img(src="../assets/img/work/12-dsconf-lanyard.jpg", alt="dsconf lanyard")
+                .work-carousel__item
+                  img(src="../assets/img/work/12-dsconf-photobooth.jpg", alt="dsconf photobooth")
+                .work-carousel__item
+                  img(src="../assets/img/work/12-dsconf-stage.jpg", alt="dsconf stage")
+                .work-carousel__item
+                  img(src="../assets/img/work/12-dsconf-standee.jpg", alt="dsconf standee")
+                .work-carousel__item
+                  img(src="../assets/img/work/12-dsconf-tshirt.jpg", alt="dsconf tshirt")
               .work-work__hover
                 h3 Event Management And Marketing
                 h4 DSConf 2019
-            a.flex-1.work-work__item(href="https://angel.co", target="_blank", rel="noopener noreferrer", style="background-image: url('../assets/img/work/join-ghaas.png')")
+            a.flex-1.work-work__item(href="https://angel.co/company/ghaas-1", target="_blank", rel="noopener noreferrer", style="background-image: url('../assets/img/work/join-ghaas.png')")
               .work-work__hover.join
                 h3 Join the team
                 h4
@@ -144,6 +176,8 @@ html(lang="en")
           p Workship is a recruitment platform that connects job prospects to companies and job opportunities that match their profile and expectations. It is a technologically assisted platform that allows candidate screening for technical jobs to adequately match them to jobs they deserve.
           h4.yellow Logo
           p The logo is a minimalist approach on the word: Workship. The play is on the last two letters where the serif of "i" and "p" are connected symbolising the bond of friendship that Workship stands for. The letter P also plays the role of a job seeker where the curve of "P" is the backpack full of talent that the job seeker brings in for the company. So the logo in total works for the companies that tie up with Workship as well as the job seekers who use Workship as a portal.
+          .workship-logo
+            img(src="../assets/img/work/04-workship-logo.jpg", alt="workship logo")
           .row
             .flex-1
               h4.yellow Colour Palette
@@ -161,7 +195,40 @@ html(lang="en")
               p(style="margin-top: 25px") Primary - Libre Baskerville
               p Secondary - InterUI
           h4.yellow Website Design
+          img(src="../assets/img/work/04-workship-website-design.jpg", alt="workship website design")
           h4.yellow Stationary
+            .row
+              .flex-1
+                img(src="../assets/img/work/04-workship-visiting-card.jpg", alt="workship visiting card")
+                img(src="../assets/img/work/04-workship-sticker.jpg", alt="workship sticker")
+                img(src="../assets/img/work/04-workship-print.jpg", alt="workship print")
+              .flex-1
+                img(src="../assets/img/work/04-workship-apparel-men.jpg", alt="workship apparel men")
+                img(src="../assets/img/work/04-workship-apparel-women.jpg", alt="workship apparel women", style="margin-left: -5px;     min-width: calc(100% + 5px);")
+
+        .content-5
+          h2 Video Creation
+          h4(style="margin-bottom: 50px;") Fitato
+          iframe(src="https://drive.google.com/file/d/1f6qFVvQtoF1XnsYkjQRRFo7CUVbVdnxZ/preview", frameborder="0", width="100%", height="600")
+
+        .content-8
+          h2 Event Marketing
+          h4(style="margin-bottom: 50px;") Fitato
+          h4.fitato-red What Are Fitato Exclusive Events?
+          p Fitato Exclusive Events are fitness events hosted and organised by Fitato for the Fitato community.
+          h4.fitato-red Marketing Goals
+          ul
+            li To brand Fitato Exclusives as a key benefit of the Fitato Pass.
+            li Conversions for the Fitato Pass.
+            li To promote the idea of Fitato Community.
+          h4.fitato-red Creative Thought
+          p To portray every event as an exceptional activity through informative and intriguing copy and eye-catching design.
+          h4.fitato-red Success Measures
+          ul
+            li More than 150 events branded under Fitato Exclusives.
+            li Average event participation increased by 75%.
+          img(src="../assets/img/work/08-fitato-futsal.jpg", alt="fitato futsal")
+          img(src="../assets/img/work/08-fitato-fitness-fiesta.jpg", alt="fitato fitness fiesta")
 
         .content-10
           h2 UI Design
@@ -169,6 +236,15 @@ html(lang="en")
           h4.fitato-red About Fitato
           p Fitato is a fitness brand that allows customers to access multiple fitness facilities with a single pass and enjoy fitness activities that are unconventional and fun-filled. Its product is the Fitato Membership or the Fitato Pass and USP is the Fitato Exclusive Events.
           h4.fitato-red Website UI
+          .row
+            .flex-1
+              .floating-img.floating-img-left
+                h4.yellow Homepage
+                img(src="../assets/img/work/10-fitato-home-page.jpg", alt="fitato home page")
+            .flex-1
+              .floating-img.floating-img-right
+                h4.yellow Corporate Wellness
+                img(src="../assets/img/work/10-fitato-corporate-page.jpg", alt="fitato corporate page")
 
     +footer('../')
     +contactModal
