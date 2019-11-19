@@ -4,8 +4,8 @@
     background-color: #ffffff;
     color: $grey-color-dark;
     padding-bottom: 100px;
-    background-image: url("../img/smes-hero.svg");
-    background-position: top;
+    background-image: url("../img/smes-hero.jpg");
+    background-position: calc(50% + 400px) top;
     -webkit-background-size: contain;
     -moz-background-size: contain;
     -o-background-size: contain;
@@ -31,15 +31,12 @@
 
     @media (max-width: 767px) {
       padding: 0 10% 100px 10%;
+      background-position: 50vw top;
     }
 
     @media (max-width: 480px) {
       padding: 0 5% 100px 5%;
-      -webkit-background-size: 200% 200%;
-      -moz-background-size: 200%;
-      -o-background-size: 200%;
-      background-size: 200%;
-      background-position-x: 60%;
+      background-position: 40vw top;
 
       h1 {
         width: 80%;
