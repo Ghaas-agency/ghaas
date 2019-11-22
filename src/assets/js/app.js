@@ -29,13 +29,13 @@ window.onclick = function(e) {
 
   /* Contact modal open. */
   if(e.target.id === 'contact-modal-trigger') {
-    modal.style.display = 'block';
+    modal.className = 'show';
     document.body.style.overflow = 'hidden';
   }
   
   /* Contact modal close. */
-  if(e.target.className === 'modal-close' || e.target.id === 'contact-modal') {
-    modal.style.display = 'none';
+  if(e.target.className === 'button-unstyled modal-close' || e.target.id === 'contact-modal') {
+    modal.className = '';
     document.body.style.overflow = 'auto';
   }
 
