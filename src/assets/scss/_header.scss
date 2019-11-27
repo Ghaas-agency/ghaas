@@ -81,10 +81,10 @@ nav {
           margin: 0 15px;
           text-decoration: none;
           color: $grey-color-light;
-          letter-spacing: 2px;
+          letter-spacing: 1px;
           font-size: 0.85em;
 
-          @media only screen and (max-width: 979px) {
+          @media only screen and (max-width: 1102px) {
             font-size: 0.75em;
             margin: 0 10px;
           }
@@ -125,7 +125,7 @@ nav {
     display: none;
   }
 
-  @media only screen and (max-width: 767px) {
+  @media only screen and (max-width: 925px) {
     .container {
       display: block;
       position: relative;

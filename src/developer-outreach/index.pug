@@ -1,0 +1,103 @@
+include ../components/_index.pug
+doctype html
+html(lang="en")
+  head
+    +headMeta('Growth Hacking for Startups | Ghaas',
+      'Growth for a startup means different things at different stages. Ghaas can help your startup grow, exponentially, no matter which stage you are in.',
+      '../')
+    +headScripts('../')
+
+  body
+    +nav('../', 'devoutreach')
+
+    main.startups.dev-outreach
+      section.section-hero
+        .container
+          .section-hero__wrapper
+            .line
+            h1 Developer
+              br
+              | Outreach
+            p Helping companies engage engineering communities
+              br
+              |  - both internally and externally.
+            button#contact-modal-trigger.button(type="button") Talk to us
+      section.section-what
+        .container
+          .line
+          h2 We&apos;re living in a
+            br
+            | Developer-Driven Economy
+          p Access to developers is a BIGGER threat to business success than access to capital.
+      section.section-steps
+        .container
+          .line
+          h2.center How we can help
+          .section-steps__items
+            .section-steps__item
+              span.section-steps__item--left.center
+                img(src="../assets/img/developer-marketing.png" alt="developer marketing")
+              span.section-steps__item--right
+                h4 Developer Marketing
+                p Marketing focussed on a niche audience of software developers.
+                ul
+                  li Developer brand strategy
+                  li Company story
+                  li Content marketing
+                  li Digital outreach
+            .section-steps__item
+              span.section-steps__item--left.center
+                img(src="../assets/img/developer-evangelism.png" alt="developer evangelism")
+              span.section-steps__item--right
+                h4 Developer Evangelism
+                p Carefully crafted program to tranform your team into evangelists.
+                ul
+                  li Strategy development
+                  li Mentoring and training
+                  li MVP program design
+                  li Outreach plan and execution
+            .section-steps__item
+              span.section-steps__item--left.center
+                img(src="../assets/img/experience-design.png" alt="experience design")
+              span.section-steps__item--right
+                h4 Experience Design
+                p Make every interaction with your company a delight.
+                ul
+                  li Hiring process audit
+                  li Onboarding experience design
+                  li Internal communication
+                  li In-house events and activities
+      section.section-what.dev-quote
+        .container
+          .line
+          p.big Consider approaching recruiting the way you approach marketing. The end goal of each is to make your company appear more desirable. You have to build a brand.
+          p - Greg Brockman
+
+      section.section-consider.center
+        .container
+          .line
+          h2 Why Consider Developer Outreach
+            br
+            | and Marketing
+          .section-consider__items
+            .section-consider__item
+              img(src="../assets/img/hire-better.png", alt="hire better")
+              span Hire Better, Faster
+            .section-consider__item
+              img(src="../assets/img/ownership-culture.png", alt="ownership culture")
+              span Ownership Culture
+            .section-consider__item
+              img(src="../assets/img/increased-retention.png", alt="increased retention")
+              span Increased Retention
+            .section-consider__item
+              img(src="../assets/img/brand-advocacy.png", alt="brand advocacy")
+              span Brand Advocacy
+          button#contact-modal-trigger.button(type="button") Get in touch
+
+
+    +sectionTalk('Let\'s talk about growing your business')
+    +footer('../')
+    +contactModal
+    +contactTab('../')
+    script(src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@14.0/dist/smooth-scroll.polyfills.min.js")
+    script(src="../assets/js/app.js")
