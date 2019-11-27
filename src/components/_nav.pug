@@ -7,7 +7,7 @@ mixin nav(pathPrefix, activePage)
       .nav-left
         a(href=pathPrefix)
           img(src=`${pathPrefix}assets/img/ghaas-logo.svg` alt="ghaas logo" title="Growth Hacking as a Service")
-      .nav-right
+      .nav-right(style="display: none;")
         ul
           li
             a(href=`${pathPrefix}growth-hacking-for-startups/`, class=`${activePage === 'startups' ? 'active' : ''}`) STARTUPS
@@ -21,5 +21,6 @@ mixin nav(pathPrefix, activePage)
             a(href="https://ghaas.xyz/blog") BLOG
           li
             a(href=`${pathPrefix}contact/`, class=`${activePage === 'contact' ? 'active' : ''}`) CONTACT
-      img.menu-trigger(src=`${pathPrefix}assets/img/menu.svg` alt="menu")
-      .menu-trigger-bg
+      button.menu-trigger.button-unstyled(type="button", onclick="mobileMenuClickHandler(event);")
+        img(src=`${pathPrefix}assets/img/menu.svg` alt="menu")
+      .menu-trigger-bg(style="display: none;")

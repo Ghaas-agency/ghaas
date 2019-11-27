@@ -1,7 +1,3 @@
-/* Menu handling for smaller screens. */
-var menu = document.getElementsByClassName('nav-right')[0];
-var menuBg = document.getElementsByClassName('menu-trigger-bg')[0];
-
 /* Adding current year to the copyright section. */
 var date = new Date();
 document.getElementsByClassName('current-year')[0].innerHTML = date.getFullYear();
@@ -17,16 +13,21 @@ if(typeof SmoothScroll !== 'undefined') {
 /* Contact Modal */
 var modal = document.getElementById('contact-modal');
 
-window.onclick = function(e) {
-  /* Navigation menu toggle. */
-  if(e.target.className === 'menu-trigger' && getComputedStyle(menu, null).display === 'none') {
+/* Mobile menu click handler. */
+var menu = document.getElementsByClassName('nav-right')[0];
+var menuBg = document.getElementsByClassName('menu-trigger-bg')[0];
+
+function mobileMenuClickHandler() {
+  if (menu.style.display === 'none') {
     menu.style.display = 'block';
     menuBg.style.display = 'block';
-  } else if(e.target.className === 'menu-trigger' && getComputedStyle(menu, null).display === 'block' || e.target.className === 'menu-trigger-bg' && getComputedStyle(menuBg, null).display === 'block') {
+  } else {
     menu.style.display = 'none';
     menuBg.style.display = 'none';
   }
+}
 
+window.onclick = function(e) {
   /* Contact modal open. */
   if(e.target.id === 'contact-modal-trigger') {
     modal.className = 'show';

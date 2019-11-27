@@ -124,9 +124,6 @@ nav {
     display: none;
   }
 
-  @media only screen and (max-width: 979px) {
-  }
-
   @media only screen and (max-width: 767px) {
     .container {
       display: block;
@@ -198,13 +195,16 @@ nav {
       top: 15px;
       right: 20px;
       fill: $primary-color;
-      height: 30px;
-      width: 30px;
-      border: 1px solid $primary-color;
-      padding: 3px;
-      -webkit-border-radius: 2px;
-      -moz-border-radius: 2px;
-      border-radius: 2px;
+
+      img {
+        height: 30px;
+        width: 30px;
+        padding: 3px;
+        border: 1px solid $primary-color;
+        -webkit-border-radius: 2px;
+        -moz-border-radius: 2px;
+        border-radius: 2px;
+      }
     }
 
     .menu-trigger-bg {
