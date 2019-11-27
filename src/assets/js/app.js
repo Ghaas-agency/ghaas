@@ -18,12 +18,12 @@ var menu = document.getElementsByClassName('nav-right')[0];
 var menuBg = document.getElementsByClassName('menu-trigger-bg')[0];
 
 function mobileMenuClickHandler() {
-  if (menu.style.display === 'none') {
-    menu.style.display = 'block';
-    menuBg.style.display = 'block';
+  if (menu.className === 'nav-right') {
+    menu.className = 'nav-right active';
+    menuBg.className = 'menu-trigger-bg active';
   } else {
-    menu.style.display = 'none';
-    menuBg.style.display = 'none';
+    menu.className = 'nav-right';
+    menuBg.className = 'menu-trigger-bg';
   }
 }
 

@@ -59,6 +59,7 @@ nav {
   }
 
   .nav-right {
+    display: block;
     -webkit-box-flex: 4;
     -ms-flex: 4;
     -webkit-flex: 4;
@@ -187,6 +188,10 @@ nav {
           }
         }
       }
+
+      &.active {
+        display: block;
+      }
     }
 
     .menu-trigger {
@@ -218,6 +223,10 @@ nav {
       height: 100%;
       background-color: rgba(0, 0, 0, 0.5);
       z-index: -1;
+
+      &.active {
+        display: block;
+      }
     }
   }
 }
